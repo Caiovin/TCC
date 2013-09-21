@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="663826D8-7FDA-84B0-008E-469E6EC50C17" name="tbMateria">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-21 20:12:06 UTC</createdTime>
+<generatorID>D539E398-E5D1-E63F-411A-9BA4E436E97D</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codMateria" id="8B199F3D-A132-E7C2-7220-F27424D42591">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-21 20:12:06 UTC</createdTime>
+<generatorID>866C163D-8C19-893C-FC40-EED7059D665B</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Professor" id="F305E1B8-9CD2-7B75-10C6-987D4C72262D">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-21 20:12:06 UTC</createdTime>
+<generatorID>3AC43BDE-EEB7-0D4A-6CAA-269467BE59DE</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="43E2C02F-D833-8C6D-30CA-C808D27DC705">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-21 20:12:06 UTC</createdTime>
+<generatorID>7F4B4D66-ED2E-A81B-1DF9-6499945E5160</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Carga" id="95E1FDFB-9D4D-7305-1D72-4615EC5D31D3">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-21 20:12:06 UTC</createdTime>
+<generatorID>4748737F-8EFB-8FCD-00D6-CEAE75A4734B</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0ADB0FA1-C48F-841B-6B72-8AB3075D2070" name="tbMateria_PK">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-21 20:12:06 UTC</createdTime>
+<generatorID>3816DEF3-D668-0A91-3C43-84E47EBDA655</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B199F3D-A132-E7C2-7220-F27424D42591"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

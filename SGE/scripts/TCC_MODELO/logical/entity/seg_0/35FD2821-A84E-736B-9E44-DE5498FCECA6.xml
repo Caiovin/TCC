@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="35FD2821-A84E-736B-9E44-DE5498FCECA6" name="tbLogin(">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-21 19:46:14 UTC</createdTime>
+<generatorID>76A6A4AA-A229-F6C0-8C73-C3B94EA6E861</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="C1EDAAD7-4D15-1E78-FD90-5338AFBD670E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="username" id="16F63CE1-E6C1-C435-63C4-204C85364284">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-21 19:46:14 UTC</createdTime>
+<generatorID>5FF539B8-A5C2-740B-2951-530CD19009FD</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="C1EDAAD7-4D15-1E78-FD90-5338AFBD670E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="senha" id="E41D7EBC-45FA-B0AC-4B00-53E27E1C4B35">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-21 19:46:14 UTC</createdTime>
+<generatorID>1B432832-5C62-FF07-134E-0C2178DD83E8</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="C1EDAAD7-4D15-1E78-FD90-5338AFBD670E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="fullname" id="589B8EF0-E4A9-A3C3-1E97-ADA91DB1F2FB">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-21 19:46:14 UTC</createdTime>
+<generatorID>CCB98DE9-3E5D-DE31-4FF3-0144C496D688</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="C1EDAAD7-4D15-1E78-FD90-5338AFBD670E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="email" id="0699B3EB-1F00-B4D4-5131-0E6AE509C434">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-21 19:46:14 UTC</createdTime>
+<generatorID>DBF12568-A40D-2E82-B3E7-2D6FA5F2B7E3</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="C1EDAAD7-4D15-1E78-FD90-5338AFBD670E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+</attributes>
+</Entity>

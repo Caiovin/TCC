@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="35FD2821-A84E-736B-9E44-DE5498FCECA6" name="tbLogin(" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8A5BA277-B756-F705-DA88-C43272F037D2" name="TB_PROFESSOR" seqName="seg_0"/>
+   <object objectType="Entity" objectID="D539E398-E5D1-E63F-411A-9BA4E436E97D" name="tbMateria" seqName="seg_0"/>
+   <object objectType="Entity" objectID="D80EC0B1-5C56-CA95-993F-AEF804505EF5" name="TB_ALUNO" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

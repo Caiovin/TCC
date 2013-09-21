@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="663826D8-7FDA-84B0-008E-469E6EC50C17" name="tbMateria" seqName="seg_0"/>
+   <object objectType="Table" objectID="68C27371-7789-4F27-0BC3-5D8E0A04C619" name="TB_PROFESSOR" seqName="seg_0"/>
+   <object objectType="Table" objectID="A98649E8-6393-F9BA-C1D7-D5C6457A833D" name="tbLogin(" seqName="seg_0"/>
+   <object objectType="Table" objectID="B26645CB-0B75-48BC-2CE0-895BE995C8A3" name="TB_ALUNO" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
