@@ -36,20 +36,20 @@ public class TelaPrincipal extends JFrame {
 	public TelaPrincipal() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 719, 475);
-		
+
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
-		
+
 		JMenu mnCadastros = new JMenu("Cadastros");
 		menuBar.add(mnCadastros);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		GridBagLayout gbl_contentPane = new GridBagLayout();
-		gbl_contentPane.columnWidths = new int[]{0};
-		gbl_contentPane.rowHeights = new int[]{0};
-		gbl_contentPane.columnWeights = new double[]{Double.MIN_VALUE};
-		gbl_contentPane.rowWeights = new double[]{Double.MIN_VALUE};
+		gbl_contentPane.columnWidths = new int[] { 0 };
+		gbl_contentPane.rowHeights = new int[] { 0 };
+		gbl_contentPane.columnWeights = new double[] { Double.MIN_VALUE };
+		gbl_contentPane.rowWeights = new double[] { Double.MIN_VALUE };
 		contentPane.setLayout(gbl_contentPane);
 	}
 

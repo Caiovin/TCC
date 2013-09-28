@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TB_RESPONSAVEL_ALUNO_FK" directorySegmentName="seg_0" id="AA55D17A-31BD-02CF-0BAE-2390D6750508">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:39:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>37243C6E-7244-7434-A55C-67A64DE2956A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>81145E2B-7248-4C54-39C1-117B70B5A787</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D8AEA5C8-9CE0-ADCE-8963-AB8DA983E192</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

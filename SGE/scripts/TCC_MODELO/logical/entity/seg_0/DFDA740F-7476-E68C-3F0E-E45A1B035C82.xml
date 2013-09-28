@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DFDA740F-7476-E68C-3F0E-E45A1B035C82" name="TB_USUARIO">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:26:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NM_USUARIO" id="325147C8-65DE-56D6-BB14-4DCCDC7CCA5C">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:14:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
+<Attribute name="SENHA_USUARIO" id="D91D2272-C479-22FC-B9CA-691F52886E87">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:16:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
+<Attribute name="EMAIL_USUARIO" id="FEFA2A97-83DF-D11C-0D5F-4314E5E6B841">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:15:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
+<Attribute name="NOME_COMPLETO" id="35C8DDDA-BA12-CA81-99FD-10FC109A8168">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:05:57 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="156F13AB-9DBA-B83B-5BE6-220D5A2FD72A" name="TB_USUARIO PK">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:34:26 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>325147C8-65DE-56D6-BB14-4DCCDC7CCA5C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="989BE9BD-755D-1154-DCA5-D6502AA683AC" name="TB_OCORRENCIA">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:20:41 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COD_OCORRENCIA" id="641B63A3-E177-0717-5E25-E262C92D9D61">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:30:44 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="RM_ALUNO" id="951800C9-2261-02F2-8808-751B4119F807">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:36:25 UTC</createdTime>
+<generatorID>034DBD93-4F2E-09FC-3625-9C4C0C692CF6</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>B086FC4E-2920-AC6A-4F5E-FD89763053D7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="DESC_OCORRENCIA" id="BF596ECB-F9D2-F259-C9A8-53406F1092E9">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:48:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3FEE0B0E-9FF0-5859-8951-77C8A68667A0" name="TB_OCORRENCIA PK">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:31:12 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>641B63A3-E177-0717-5E25-E262C92D9D61</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

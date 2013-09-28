@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9F675B3F-8F2D-A01E-ED88-24003848C915" name="TB_CIDADE">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:11:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_CIDADE" id="D13493EC-A5A5-9974-DB8E-AC20E870993F">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:11:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="CIDADE" id="5E808431-5943-577B-8645-8465C6187D70">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:11:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+</Attribute>
+<Attribute name="UF" id="69D86E64-2F67-3080-3CD4-476DBEC1C60A">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:12:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8319D3BD-02A2-4363-C5E6-593449D9B771" name="TB_CIDADE PK">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:11:54 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D13493EC-A5A5-9974-DB8E-AC20E870993F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

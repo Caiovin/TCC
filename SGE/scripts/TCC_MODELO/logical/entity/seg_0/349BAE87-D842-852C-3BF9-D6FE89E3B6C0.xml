@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="349BAE87-D842-852C-3BF9-D6FE89E3B6C0" name="TB_ATIVIDADE">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:22:43 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COD_ATIVIDADE" id="19C7DB71-3321-A18F-4363-4AE325332E25">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:33:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="COD_TURMA" id="C16EFD5E-886B-F582-F2D3-B189782E8BB5">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:24:17 UTC</createdTime>
+<generatorID>7E385B71-7BE1-E2A4-038F-277D73F677EE</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>FF72AF06-EB34-0435-3B50-8025EC53CB05</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="COD_PROFESSOR" id="09D204D4-CEB4-70BE-01EF-3BD9A443FD26">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:53:10 UTC</createdTime>
+<generatorID>52DD26DD-EAB5-B552-BD7B-864915187423</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>4EA2318C-DEA9-0FB8-5867-F198D3E00815</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="DESC_ATIVIDADE" id="E561B101-99CE-BE45-CE8D-1697DD58A3CD">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:51:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
+<Attribute name="TIPO_ATIVIDADE" id="DC7DF43C-6FB9-4585-A660-E8B242E9A423">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:31:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="DT_ENTREGA" id="70B28E5F-1CCB-FB71-5556-D3840C60A9F6">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:31:44 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="DT_ATIVIDADE" id="D31C2B22-A670-4520-9D2D-BCFB61A6EB82">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:32:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="VALOR_ATIVIDADE" id="F534336A-2F70-B8B9-1272-458340ED2C67">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:32:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="78FB21DD-2059-6506-6B30-9999D4268F9D" name="TB_ATIVIDADE PK">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:34:02 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>19C7DB71-3321-A18F-4363-4AE325332E25</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

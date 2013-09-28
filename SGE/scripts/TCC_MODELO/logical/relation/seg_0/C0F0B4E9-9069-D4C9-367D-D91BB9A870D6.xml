@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_AULA_FREQUENCIA" directorySegmentName="seg_0" id="C0F0B4E9-9069-D4C9-367D-D91BB9A870D6">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:25:02 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>D7D70231-42E5-C8B8-65E5-0F496F5F4758</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>724DD4F7-29A1-5849-ADE0-24E648EA1D31</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>26B30E59-E18F-63D1-06E6-2D85D43D630C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

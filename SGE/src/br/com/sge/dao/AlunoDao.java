@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.sge.bean.Aluno;
+import br.com.sge.bean.AlunoBean;
 import br.com.sge.exception.DaoException;
 import br.com.sge.util.DbUtil;
 
@@ -18,76 +18,73 @@ import br.com.sge.util.DbUtil;
 public class AlunoDao {
     
     private static final String EXCLUIR_ALUNO = 
-			"delete from tbAluno where MatriculaAluno = ?";
+			"delete from TB_ALUNO where RM_ALUNO = ?";
 
 	private static final String INSERIR_ALUNO =
-			"insert into tbAluno(matricula_Aluno, nome_aluno, idade_aluno, nasc_aluno, sexo_aluno, cpf_aluno, rg_aluno, "+
-			"ensino_aluno, serie_aluno, endereco_aluno, bairro_aluno, cidade_aluno, cep_aluno, " +
-                        "tel_aluno, cel_aluno, estado_aluno )" +
-			"values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+			"insert into TB_ALUNO(RM_ALUNO, NM_ALUNO, SEXO_ALUNO, RG_ALUNO, CPF_ALUNO, DT_NASC_ALUNO, "+
+			"TEL_ALUNO, CEL_ALUNO, END_ALUNO, EMAIL_ALUNO,COD_RESPONSAVEL, NM_RESPONSAVEL, NM_TURMA, COD_TURMA, PRD_ALUNO" +
+            "values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
 	private static final String ATUALIZAR_ALUNO =
-			"update tbAluno set " +
-                        "matricula_aluno = ?, " +
-			"nome_aluno = ?, " +
-                        "idade_aluno = ?," +
-                        "nasc_aluno = ?," +
-			"sexo_aluno = ?, " +
-			"cpf_aluno = ?, " +
-			"rg_aluno = ?, " +
-                        "ensino_aluno = ?, " +
-                        "serie_aluno = ?, " +
-                        "endereco_aluno = ?, " +
-			"bairro_aluno = ?, " +
-                        "cidade_aluno = ?, " +
-                        "cep_aluno = ?, " +
-                        "tel_aluno = ?, " +
-                        "cel_aluno = ?, " +
-                        "estado_aluno = ? ";
+			"update TB_ALUNO set " +
+            "RM_ALUNO = ?, " +
+			"NM_ALUNO = ?, " +
+            "SEXO_IDADE = ?," +
+            "RG_ALUNO = ?," +
+			"CPF_ALUNO = ?, " +
+			"DT_NASC_ALUNO = ?, " +
+			"TEL_ALUNO = ?, " +
+            "CEL_ALUNO = ?, " +
+            "END__ALUNO = ?, " +
+            "EMAIL_ALUNO = ?, " +
+            "COD_RESPONSAVEL = ?, "+
+			"NM_RESPONSAVEL = ?, " +
+            "NM_TURMA = ?, " +
+            "COD_TURMA = ?, " +
+            "PRD_ALUNO = ?, ";
 
 	
-	private static final  String CONSULTA_ALUNOS =
-			"select * from tbAluno order by nome_aluno";
+	private static final  String CONSULTA_ALUNO =
+			"select * from TB_ALUNO order by NM_ALUNO asc";
 
-	private static final  String CONSULTA_ALUNOS_NOME =
-			"select * from tbAluno where nome_aluno like ? order by nome_aluno";
+	private static final  String CONSULTA_ALUNO_NOME =
+			"select * from TB_ALUNO where NM_ALUNO like ? order by NM_ALUNO";
 
 	private static final  String CONSULTA_ALUNO_RM = 
-			"select * from tbAluno where MatriculaAluno = ?";
+			"select * from TB_ALUNO where RM_ALUNO = ?";
 
 
-	public List<Aluno> consultarAlunos(String nome) throws DaoException{		
+	public List<AlunoBean> consultarAluno(String NmAluno) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
-		List<Aluno> listaAlun = new ArrayList<Aluno>();
+		List<AlunoBean> listaAlun = new ArrayList<AlunoBean>();
 		try {
-			if(nome.equals("")){
-				statement = conn.prepareStatement(CONSULTA_ALUNOS);
+			if(NmAluno.equals("")){
+				statement = conn.prepareStatement(CONSULTA_ALUNO);
 			}else{
-				statement = conn.prepareStatement(CONSULTA_ALUNOS_NOME);
-				statement.setString(1, "%"+nome+"%");
+				statement = conn.prepareStatement(CONSULTA_ALUNO_NOME);
+				statement.setString(1, "%"+NmAluno+"%");
 			}
 			result = statement.executeQuery();
 			while (result.next()) {
-				Aluno objAlun = new Aluno();
-				objAlun.setMatriculaAluno(result.getInt(1));
-				objAlun.setNome(result.getString(2));
-                                objAlun.setIdade(result.getInt(3));
-				objAlun.setSexo(result.getString(4));
-                                objAlun.setNasc(result.getString(5));
-				objAlun.setCPF(result.getString(6));
-				objAlun.setRG(result.getString(7));
-				objAlun.setEnsino(result.getString(8));
-				objAlun.setSerie(result.getString(9));
-				objAlun.setEndereco(result.getString(10));
-                                objAlun.setBairro(result.getString(11));
-                                objAlun.setCidade(result.getString(12));
-                                objAlun.setCEP(result.getString(13));
-                                objAlun.setTelefone(result.getInt(14));
-                                objAlun.setCelular(result.getInt(15));
-                                objAlun.setEstado(result.getString(16));
-				listaAlun.add(objAlun);
+				AlunoBean objAlun = new AlunoBean();
+				objAlun.setRmAluno(result.getInt(1));
+				objAlun.setNmAluno(result.getString(2));
+                objAlun.setSexoAluno(result.getString(3));
+				objAlun.setRgAluno(result.getString(4));
+                objAlun.setCpfAluno(result.getString(5));
+				objAlun.setDtNascAluno(result.getString(6));
+				objAlun.setTelAluno(result.getString(7));
+				objAlun.setCelAluno(result.getString(8));
+				objAlun.setEndAluno(result.getString(9));
+				objAlun.setEmailAluno(result.getString(10));
+                objAlun.setNmResponsavel(result.getString(11));
+                objAlun.setNmTurma(result.getString(12));
+                objAlun.setCodTurma(result.getInt(13));
+                objAlun.setCodResponsavel(result.getInt(14));
+                objAlun.setPrdAluno(result.getString(15));
+                listaAlun.add(objAlun);
 			}
 		} catch (SQLException e) {
 			throw new DaoException(e);
@@ -97,32 +94,31 @@ public class AlunoDao {
 		return listaAlun;		
 	}
 
-	public Aluno consultarAlunoRM(int idAlun) throws DaoException{		
-		Aluno objAlun = new Aluno();
+	public AlunoBean consultarAlunoRM(int rmAluno) throws DaoException{		
+		AlunoBean objAlun = new AlunoBean();
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(CONSULTA_ALUNO_RM);
-			statement.setInt(1, idAlun);
+			statement.setInt(1, rmAluno);
 			result = statement.executeQuery();
 			while (result.next()) {
-				objAlun.setMatriculaAluno(result.getInt(1));
-				objAlun.setNome(result.getString(2));
-                                objAlun.setIdade(result.getInt(3));
-				objAlun.setSexo(result.getString(4));
-                                objAlun.setNasc(result.getString(5));
-				objAlun.setCPF(result.getString(6));
-				objAlun.setRG(result.getString(7));
-				objAlun.setEnsino(result.getString(8));
-				objAlun.setSerie(result.getString(9));
-				objAlun.setEndereco(result.getString(10));
-                                objAlun.setBairro(result.getString(11));
-                                objAlun.setCidade(result.getString(12));
-                                objAlun.setCEP(result.getString(13));
-                                objAlun.setTelefone(result.getInt(14));
-                                objAlun.setCelular(result.getInt(15));
-                                objAlun.setEstado(result.getString(16));
+				objAlun.setRmAluno(result.getInt(1));
+				objAlun.setNmAluno(result.getString(2));
+                objAlun.setSexoAluno(result.getString(3));
+				objAlun.setRgAluno(result.getString(4));
+                objAlun.setCpfAluno(result.getString(5));
+				objAlun.setDtNascAluno(result.getString(6));
+				objAlun.setTelAluno(result.getString(7));
+				objAlun.setCelAluno(result.getString(8));
+				objAlun.setEndAluno(result.getString(9));
+				objAlun.setEmailAluno(result.getString(10));
+                objAlun.setNmResponsavel(result.getString(11));
+                objAlun.setNmTurma(result.getString(12));
+                objAlun.setCodTurma(result.getInt(13));
+                objAlun.setCodResponsavel(result.getInt(14));
+                objAlun.setPrdAluno(result.getNString(15));
 			}
 		} catch (SQLException e) {
 			throw new DaoException(e);
@@ -132,29 +128,28 @@ public class AlunoDao {
 		return objAlun;		
 	}
 
-	public boolean inserirAlunos(Aluno obj) throws DaoException{		
+	public boolean inserirAluno(AlunoBean obj) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(INSERIR_ALUNO);
-			statement.setInt(1, obj.getMatriculaAluno());
-                        statement.setString(2,obj.getNome());
-			statement.setInt(3, obj.getIdade());
-			statement.setString(4, obj.getSexo());
-			statement.setString(5, obj.getNasc());
-			statement.setString(6, obj.getCPF());
-			statement.setString(7, obj.getRG());
-			statement.setString(8, obj.getEnsino());
-                        statement.setString(9, obj.getSerie());
-                        statement.setString(10, obj.getEndereco());
-                        statement.setString(11, obj.getBairro());
-                        statement.setString(12, obj.getCidade());
-                        statement.setString(13, obj.getCEP());
-                        statement.setInt(14, obj.getTelefone());
-                        statement.setInt(15, obj.getCelular());
-                        statement.setString(16, obj.getEstado());
-			statement.executeUpdate();
+			statement.setInt(1, obj.getRmAluno());
+            statement.setString(2,obj.getNmAluno());
+			statement.setString(3, obj.getSexoAluno());
+			statement.setString(4, obj.getRgAluno());
+			statement.setString(5, obj.getCpfAluno());
+			statement.setString(6, obj.getDtNascAluno());
+			statement.setString(7, obj.getTelAluno());
+			statement.setString(8, obj.getCelAluno());
+            statement.setString(9, obj.getEndAluno());
+            statement.setString(10, obj.getEmailAluno());
+            statement.setString(11, obj.getNmResponsavel());
+            statement.setString(12, obj.getNmTurma());
+            statement.setInt(13, obj.getCodTurma());
+            statement.setInt(14, obj.getCodResponsavel());
+            statement.setString(15, obj.getPrdAluno());
+            statement.executeUpdate();
 
 		} catch (SQLException e) {
 			throw new DaoException(e);
@@ -164,29 +159,28 @@ public class AlunoDao {
 		return true;		
 	}
 
-	public boolean atualizarAluno(Aluno objAlun) throws DaoException{		
+	public boolean atualizarAluno(AlunoBean objAlun) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(ATUALIZAR_ALUNO);
-			statement.setInt(1, objAlun.getMatriculaAluno());
-                        statement.setString(2, objAlun.getNome());
-			statement.setInt(3, objAlun.getIdade());
-			statement.setString(4, objAlun.getSexo());
-			statement.setString(5, objAlun.getNasc());
-			statement.setString(6, objAlun.getCPF());
-			statement.setString(7, objAlun.getRG());
-			statement.setString(8, objAlun.getEnsino());
-                        statement.setString(9, objAlun.getSerie());
-                        statement.setString(10, objAlun.getEndereco());
-                        statement.setString(11, objAlun.getBairro());
-                        statement.setString(12, objAlun.getCidade());
-                        statement.setString(13, objAlun.getCEP());
-                        statement.setInt(14, objAlun.getTelefone());
-                        statement.setInt(15, objAlun.getCelular());
-                        statement.setString(16, objAlun.getEstado());
-			statement.executeUpdate();
+			statement.setInt(1, objAlun.getRmAluno());
+            statement.setString(2, objAlun.getNmAluno());
+			statement.setString(3, objAlun.getSexoAluno());
+			statement.setString(4, objAlun.getRgAluno());
+			statement.setString(5, objAlun.getCpfAluno());
+			statement.setString(6, objAlun.getDtNascAluno());
+			statement.setString(7, objAlun.getTelAluno());
+			statement.setString(8, objAlun.getCelAluno());
+            statement.setString(9, objAlun.getEndAluno());
+            statement.setString(10, objAlun.getEmailAluno());
+            statement.setString(11, objAlun.getNmResponsavel());
+            statement.setString(12, objAlun.getNmTurma());
+            statement.setInt(13, objAlun.getCodTurma());
+            statement.setInt(14, objAlun.getCodResponsavel());
+            statement.setString(15, objAlun.getPrdAluno());
+            statement.executeUpdate();
 
 		} catch (SQLException e) {
 			throw new DaoException(e);
@@ -196,13 +190,13 @@ public class AlunoDao {
 		return true;		
 	}
 
-	public boolean excluirAlunos(int MatriculaAluno) throws DaoException{		
+	public boolean excluirAluno(int rmAluno) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(EXCLUIR_ALUNO);
-			statement.setInt(1, MatriculaAluno);
+			statement.setInt(1, rmAluno);
 			statement.executeUpdate();
 
 		} catch (SQLException e) {

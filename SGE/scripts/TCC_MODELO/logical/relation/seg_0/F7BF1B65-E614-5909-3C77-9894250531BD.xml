@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TB_PROFESSOR_AULA_FK" directorySegmentName="seg_0" id="F7BF1B65-E614-5909-3C77-9894250531BD">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:40:12 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>8BED31C1-E141-A98D-F4FA-B2B25D70A2EB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E4AF3617-32E5-9F6F-8894-BF98AC88F1DD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>724DD4F7-29A1-5849-ADE0-24E648EA1D31</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

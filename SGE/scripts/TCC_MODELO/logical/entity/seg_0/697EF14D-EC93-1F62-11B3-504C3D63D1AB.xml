@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="697EF14D-EC93-1F62-11B3-504C3D63D1AB" name="TB_ENDERECO">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:10:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CEP" id="01C317BD-0077-697C-12BB-E64010D2D359">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:10:39 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+</Attribute>
+<Attribute name="ENDERECO" id="1FB242C9-E748-4C38-0E22-260F35F5A7CE">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:11:00 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+</Attribute>
+<Attribute name="ID_CIDADE" id="B7E4B1B4-EC52-DCE2-45B9-3CB7EA8DF894">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:16:19 UTC</createdTime>
+<generatorID>4995143B-3859-F9F0-711A-A4F49A60CF04</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>D13493EC-A5A5-9974-DB8E-AC20E870993F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="ID_BAIRRO" id="09B8CD42-AF7E-9240-DCEA-8942D943E6E2">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:17:39 UTC</createdTime>
+<generatorID>2FA336C7-D054-4DAE-3321-B0B8821F6B2C</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>3D684912-58DE-900E-5B7C-48DC3D1EB00A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="39D253EF-3515-C47E-2E3B-16BE33A6F07A" name="TB_ENDERECO PK">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:10:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>01C317BD-0077-697C-12BB-E64010D2D359</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

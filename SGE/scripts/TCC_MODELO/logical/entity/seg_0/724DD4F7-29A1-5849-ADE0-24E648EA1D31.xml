@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="724DD4F7-29A1-5849-ADE0-24E648EA1D31" name="TB_AULA">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:21:54 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COD_AULA" id="BB95A342-CA5E-5B5F-1CBD-AD7AF63A8CB5">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:34:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="COD_PROFESSOR" id="89169F8B-9E60-C2CC-2367-310CA93CBE53">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:40:12 UTC</createdTime>
+<generatorID>F7BF1B65-E614-5909-3C77-9894250531BD</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>4EA2318C-DEA9-0FB8-5867-F198D3E00815</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="COD_TURMA" id="78D3CE7A-AB66-7148-2582-2C4CA247DFCC">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:41:37 UTC</createdTime>
+<generatorID>16F46B71-D856-0D72-77B7-E247F296A8A6</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>FF72AF06-EB34-0435-3B50-8025EC53CB05</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="COD_MATERIA" id="B53381F2-AA1F-3E60-7A5C-D9948C772453">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:45:30 UTC</createdTime>
+<generatorID>568A2A82-B406-1B92-B66C-E1585DB43806</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>842967DC-575A-EF22-3151-884FD80F51BD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="NM_PROFESSOR" id="0973E571-A92F-D4D6-1B46-B1E010E6D66D">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:39:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
+<Attribute name="NM_TURMA" id="B03EE7E8-7CE0-5D2A-44E0-9A1F1B95A1F0">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:39:54 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
+<Attribute name="HORARIO_AULA" id="EBB31FB0-1FD4-856B-CD42-6DEEFB262B69">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:28:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D7D70231-42E5-C8B8-65E5-0F496F5F4758" name="TB_AULA PK">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 18:35:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BB95A342-CA5E-5B5F-1CBD-AD7AF63A8CB5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TB_ATIVIDADE_PROFESSOR_FK" directorySegmentName="seg_0" id="52DD26DD-EAB5-B552-BD7B-864915187423">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:53:10 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>8BED31C1-E141-A98D-F4FA-B2B25D70A2EB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E4AF3617-32E5-9F6F-8894-BF98AC88F1DD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>349BAE87-D842-852C-3BF9-D6FE89E3B6C0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

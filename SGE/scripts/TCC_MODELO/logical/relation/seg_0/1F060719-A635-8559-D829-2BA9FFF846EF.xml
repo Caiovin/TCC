@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ENDERECO_RESPONSAVEL" directorySegmentName="seg_0" id="1F060719-A635-8559-D829-2BA9FFF846EF">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:20:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>39D253EF-3515-C47E-2E3B-16BE33A6F07A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>697EF14D-EC93-1F62-11B3-504C3D63D1AB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>81145E2B-7248-4C54-39C1-117B70B5A787</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

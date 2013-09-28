@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="26B30E59-E18F-63D1-06E6-2D85D43D630C" name="TB_FREQUENCIA">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:24:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COD_AULA" id="08B9C000-5914-7CB5-F665-2EC8DB6BCC90">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:25:02 UTC</createdTime>
+<generatorID>C0F0B4E9-9069-D4C9-367D-D91BB9A870D6</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>BB95A342-CA5E-5B5F-1CBD-AD7AF63A8CB5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="ALUNO_PRESENTE" id="776BC48E-455E-C51A-6D3E-82B1197AAC26">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:26:00 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<defaultValue>P</defaultValue>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>E31EAF5A-5E30-E883-AB7E-90B3848BF3E6</domain>
+</Attribute>
+<Attribute name="OBS" id="C3D4D959-171C-FE59-266A-50FDDC09CFA4">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:26:41 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1EE1F0D4-19BE-F5CE-EDC0-3E403D9C07A0" name="TB_FREQUENCIA PK">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:25:29 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>08B9C000-5914-7CB5-F665-2EC8DB6BCC90</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
