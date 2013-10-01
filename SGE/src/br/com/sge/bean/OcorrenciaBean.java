@@ -1,14 +1,37 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.sge.bean;
 
 public class OcorrenciaBean {
     private int codOcorrencia;
     private int rmAluno;
+    private String nmAluno;
     private String descOcorrencia;
+    private String dtOcorrencia;
     
+    
+	/**
+	 * @return the nmAluno
+	 */
+	public String getNmAluno() {
+		return nmAluno;
+	}
+	/**
+	 * @param nmAluno the nmAluno to set
+	 */
+	public void setNmAluno(String nmAluno) {
+		this.nmAluno = nmAluno;
+	}
+	/**
+	 * @return the dtOcorrencia
+	 */
+	public String getDtOcorrencia() {
+		return dtOcorrencia;
+	}
+	/**
+	 * @param dtOcorrencia the dtOcorrencia to set
+	 */
+	public void setDtOcorrencia(String dtOcorrencia) {
+		this.dtOcorrencia = dtOcorrencia;
+	}
 	/**
 	 * @return the codOcorrencia
 	 */

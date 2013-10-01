@@ -6,8 +6,24 @@ public class AulaBean {
 	private int codTurma;
 	private int codMateria;
 	private String nmProfessor;
+	private String nmMateria;
 	private String nmTurma;
 	private String horarioAula;
+	
+	
+	/**
+	 * @return the nmMateria
+	 */
+	public String getNmMateria() {
+		return nmMateria;
+	}
+	/**
+	 * @param nmMateria the nmMateria to set
+	 */
+	public void setNmMateria(String nmMateria) {
+		this.nmMateria = nmMateria;
+	}
+	
 	
 	
 	/**

@@ -17,13 +17,12 @@ public class ResponsavelDao {
 			"delete from TB_RESPONSAVEL where COD_RESPONSAVEL = ?";
 
 	private static final String INSERIR_RESPONSAVEL =
-			"insert into TB_RESPONSAVEL(COD_RESPONSAVEL, NM_RESPONSAVEL, TEL_RESPONSAVEL, CEL_RESPONSAVEL, "+
+			"insert into TB_RESPONSAVEL(NM_RESPONSAVEL, TEL_RESPONSAVEL, CEL_RESPONSAVEL, "+
             "CEP, NUM_ENDERECO, EMAIL_RESPONSAVEL, COMPLEMENTO "+
             "values (?,?,?,?,?,?,?,?)";
 
 	private static final String ATUALIZAR_RESPONSAVEL =
 			"update TB_RESPONSAVELset " +
-			"COD_RESPONSAVEL = ?, " +
 			"NM_RESPONSAVEL = ?," +
             "TEL_RESPONSAVEL = ?, " +
             "CEL_RESPONSAVEL = ?, " +
@@ -108,14 +107,13 @@ public class ResponsavelDao {
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(INSERIR_RESPONSAVEL);
-			statement.setInt(1, obj.getCodResponsavel());
-            statement.setString(2,obj.getNmResponsavel());
-			statement.setString(3, obj.getTelResponsavel());
-			statement.setString(4, obj.getCelResponsavel());
-            statement.setString(5, obj.getCep());
-            statement.setString(6, obj.getEmailResponsavel());
-            statement.setString(7, obj.getComplemento());
-            statement.setInt(8, obj.getNumEndereco());
+			statement.setString(1,obj.getNmResponsavel());
+			statement.setString(2, obj.getTelResponsavel());
+			statement.setString(3, obj.getCelResponsavel());
+            statement.setString(4, obj.getCep());
+            statement.setString(5, obj.getEmailResponsavel());
+            statement.setString(6, obj.getComplemento());
+            statement.setInt(7, obj.getNumEndereco());
             statement.executeUpdate();
 
 		} catch (SQLException e) {
@@ -132,14 +130,13 @@ public class ResponsavelDao {
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(ATUALIZAR_RESPONSAVEL);
-			statement.setInt(1, objResp.getCodResponsavel());
-            statement.setString(2, objResp.getNmResponsavel());
-			statement.setString(3, objResp.getTelResponsavel());
-			statement.setString(4, objResp.getCelResponsavel());
-            statement.setString(5, objResp.getCep());
-            statement.setString(6, objResp.getEmailResponsavel());
-            statement.setString(7, objResp.getComplemento());
-            statement.setInt(8, objResp.getNumEndereco());
+			statement.setString(1, objResp.getNmResponsavel());
+			statement.setString(2, objResp.getTelResponsavel());
+			statement.setString(3, objResp.getCelResponsavel());
+            statement.setString(4, objResp.getCep());
+            statement.setString(5, objResp.getEmailResponsavel());
+            statement.setString(6, objResp.getComplemento());
+            statement.setInt(7, objResp.getNumEndereco());
             statement.executeUpdate();
 
 		} catch (SQLException e) {

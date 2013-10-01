@@ -28,19 +28,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="RM_ALUNO" id="3A13B629-C11E-63A3-34FE-83FDC4DC51C1">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 18:38:01 UTC</createdTime>
-<generatorID>CEC58C31-1824-6F23-6A01-2154C714CA53</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<referedAttribute>B086FC4E-2920-AC6A-4F5E-FD89763053D7</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
 <Attribute name="NM_TURMA" id="02D50610-E360-445F-2727-9AEBCF850383">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 19:25:05 UTC</createdTime>

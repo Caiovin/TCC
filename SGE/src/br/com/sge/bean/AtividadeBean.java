@@ -6,7 +6,7 @@ public class AtividadeBean {
 	private int codProfessor;
 	private String descAtividade;
 	private String tipoAtividade;
-	private String dtAtvidade;
+	private String dtAtividade;
 	private String dtEntrega;
 	private float valorAtividade;
 	
@@ -72,16 +72,16 @@ public class AtividadeBean {
 		this.tipoAtividade = tipoAtividade;
 	}
 	/**
-	 * @return the dtAtvidade
+	 * @return the dtAtividade
 	 */
-	public String getDtAtvidade() {
-		return dtAtvidade;
+	public String getDtAtividade() {
+		return dtAtividade;
 	}
 	/**
-	 * @param dtAtvidade the dtAtvidade to set
+	 * @param dtAtividade the dtAtividade to set
 	 */
-	public void setDtAtvidade(String dtAtvidade) {
-		this.dtAtvidade = dtAtvidade;
+	public void setDtAtividade(String dtAtividade) {
+		this.dtAtividade = dtAtividade;
 	}
 	/**
 	 * @return the dtEntrega

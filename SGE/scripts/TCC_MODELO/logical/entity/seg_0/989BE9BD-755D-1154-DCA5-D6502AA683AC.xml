@@ -53,6 +53,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT040</logicalDatatype>
 </Attribute>
+<Attribute name="DT_OCORRENCIA" id="6191D0E0-FAE3-0679-DCBC-428C8148D6A1">
+<createdBy>Familia</createdBy>
+<createdTime>2013-10-01 22:23:54 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="3FEE0B0E-9FF0-5859-8951-77C8A68667A0" name="TB_OCORRENCIA PK">

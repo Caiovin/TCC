@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TB_ALUNO_TURMA_FK" directorySegmentName="seg_0" id="CEC58C31-1824-6F23-6A01-2154C714CA53">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_TURMA_ALUNO" directorySegmentName="seg_0" id="48CDD36E-B88E-8862-F5B8-3D1D425FECFA">
 <createdBy>Familia</createdBy>
-<createdTime>2013-09-28 18:38:01 UTC</createdTime>
+<createdTime>2013-09-28 21:24:30 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>TCC_MODELO</ownerDesignName>
 <engineerTo>
@@ -9,14 +9,14 @@
 </engineerTo>
 <sourceTransferable>false</sourceTransferable>
 <targetTransferable>false</targetTransferable>
-<sourcePk>76DBC6BF-BA58-58E5-EA4A-7C65CF1F7F2F</sourcePk>
+<sourcePk>06549887-8879-B2E9-E29B-46A72B94052A</sourcePk>
 <identifying>false</identifying>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>D8AEA5C8-9CE0-ADCE-8963-AB8DA983E192</sourceEntity>
+<sourceEntity>19F49BC1-FDC8-53E6-1DB6-B16D491A40F4</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>19F49BC1-FDC8-53E6-1DB6-B16D491A40F4</targetEntity>
+<targetEntity>D8AEA5C8-9CE0-ADCE-8963-AB8DA983E192</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

@@ -11,24 +11,19 @@ import br.com.sge.bean.AlunoBean;
 import br.com.sge.exception.DaoException;
 import br.com.sge.util.DbUtil;
 
-/**ALUNO
- *
- * @author QBEX
- */
 public class AlunoDao {
     
     private static final String EXCLUIR_ALUNO = 
 			"delete from TB_ALUNO where RM_ALUNO = ?";
 
 	private static final String INSERIR_ALUNO =
-			"insert into TB_ALUNO(RM_ALUNO, NM_ALUNO, SEXO_ALUNO, RG_ALUNO, CPF_ALUNO, DT_NASC_ALUNO, "+
+			"insert into TB_ALUNO(NM_ALUNO, SEXO_ALUNO, RG_ALUNO, CPF_ALUNO, DT_NASC_ALUNO, "+
 			"TEL_ALUNO, CEL_ALUNO, END_ALUNO, EMAIL_ALUNO,COD_RESPONSAVEL, NM_RESPONSAVEL, NM_TURMA, COD_TURMA, PRD_ALUNO" +
-            "values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            "values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
 	private static final String ATUALIZAR_ALUNO =
 			"update TB_ALUNO set " +
-            "RM_ALUNO = ?, " +
-			"NM_ALUNO = ?, " +
+            "NM_ALUNO = ?, " +
             "SEXO_IDADE = ?," +
             "RG_ALUNO = ?," +
 			"CPF_ALUNO = ?, " +
@@ -134,21 +129,20 @@ public class AlunoDao {
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(INSERIR_ALUNO);
-			statement.setInt(1, obj.getRmAluno());
-            statement.setString(2,obj.getNmAluno());
-			statement.setString(3, obj.getSexoAluno());
-			statement.setString(4, obj.getRgAluno());
-			statement.setString(5, obj.getCpfAluno());
-			statement.setString(6, obj.getDtNascAluno());
-			statement.setString(7, obj.getTelAluno());
-			statement.setString(8, obj.getCelAluno());
-            statement.setString(9, obj.getEndAluno());
-            statement.setString(10, obj.getEmailAluno());
-            statement.setString(11, obj.getNmResponsavel());
-            statement.setString(12, obj.getNmTurma());
-            statement.setInt(13, obj.getCodTurma());
-            statement.setInt(14, obj.getCodResponsavel());
-            statement.setString(15, obj.getPrdAluno());
+			statement.setString(1, obj.getNmAluno());
+			statement.setString(2, obj.getSexoAluno());
+			statement.setString(3, obj.getRgAluno());
+			statement.setString(4, obj.getCpfAluno());
+			statement.setString(5, obj.getDtNascAluno());
+			statement.setString(6, obj.getTelAluno());
+			statement.setString(7, obj.getCelAluno());
+            statement.setString(8, obj.getEndAluno());
+            statement.setString(9, obj.getEmailAluno());
+            statement.setString(10, obj.getNmResponsavel());
+            statement.setString(11, obj.getNmTurma());
+            statement.setInt(12, obj.getCodTurma());
+            statement.setInt(13, obj.getCodResponsavel());
+            statement.setString(14, obj.getPrdAluno());
             statement.executeUpdate();
 
 		} catch (SQLException e) {
@@ -165,21 +159,20 @@ public class AlunoDao {
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(ATUALIZAR_ALUNO);
-			statement.setInt(1, objAlun.getRmAluno());
-            statement.setString(2, objAlun.getNmAluno());
-			statement.setString(3, objAlun.getSexoAluno());
-			statement.setString(4, objAlun.getRgAluno());
-			statement.setString(5, objAlun.getCpfAluno());
-			statement.setString(6, objAlun.getDtNascAluno());
-			statement.setString(7, objAlun.getTelAluno());
-			statement.setString(8, objAlun.getCelAluno());
-            statement.setString(9, objAlun.getEndAluno());
-            statement.setString(10, objAlun.getEmailAluno());
-            statement.setString(11, objAlun.getNmResponsavel());
-            statement.setString(12, objAlun.getNmTurma());
-            statement.setInt(13, objAlun.getCodTurma());
-            statement.setInt(14, objAlun.getCodResponsavel());
-            statement.setString(15, objAlun.getPrdAluno());
+			statement.setString(1, objAlun.getNmAluno());
+			statement.setString(2, objAlun.getSexoAluno());
+			statement.setString(3, objAlun.getRgAluno());
+			statement.setString(4, objAlun.getCpfAluno());
+			statement.setString(5, objAlun.getDtNascAluno());
+			statement.setString(6, objAlun.getTelAluno());
+			statement.setString(7, objAlun.getCelAluno());
+            statement.setString(8, objAlun.getEndAluno());
+            statement.setString(9, objAlun.getEmailAluno());
+            statement.setString(10, objAlun.getNmResponsavel());
+            statement.setString(11, objAlun.getNmTurma());
+            statement.setInt(12, objAlun.getCodTurma());
+            statement.setInt(13, objAlun.getCodResponsavel());
+            statement.setString(14, objAlun.getPrdAluno());
             statement.executeUpdate();
 
 		} catch (SQLException e) {

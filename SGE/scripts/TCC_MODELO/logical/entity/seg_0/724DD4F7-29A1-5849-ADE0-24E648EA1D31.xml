@@ -67,6 +67,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
+<Attribute name="NM_TURMA" id="B03EE7E8-7CE0-5D2A-44E0-9A1F1B95A1F0">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 19:39:54 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
 <Attribute name="NM_PROFESSOR" id="0973E571-A92F-D4D6-1B46-B1E010E6D66D">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 19:39:32 UTC</createdTime>
@@ -80,9 +93,9 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>120</dataTypeSize>
 </Attribute>
-<Attribute name="NM_TURMA" id="B03EE7E8-7CE0-5D2A-44E0-9A1F1B95A1F0">
+<Attribute name="NM_MATERIA" id="1864D8ED-EDFC-8BD9-AB00-8BF26AA40451">
 <createdBy>Familia</createdBy>
-<createdTime>2013-09-28 19:39:54 UTC</createdTime>
+<createdTime>2013-10-01 20:38:39 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>TCC_MODELO</ownerDesignName>
 <engineerTo>

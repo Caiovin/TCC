@@ -7,64 +7,64 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.sge.bean.Turma;
+import br.com.sge.bean.TurmaBean;
 import br.com.sge.exception.DaoException;
 import br.com.sge.util.DbUtil;
 
 public class TurmaDao {
     
     private static final String EXCLUIR_TURMA = 
-			"delete from tbTurma where cosFuncionario = ?";
+			"delete from TB_TURMA where COD_TURMA = ?";
 
 	private static final String INSERIR_TURMA =
-			"insert into tbTurma(cod_turma, nome_turma)"+
+			"insert into TB_TURMA (NM_TURMA, PRD_TURMA)"+
 			"values (?,?)";
 
 	private static final String ATUALIZAR_TURMA =
-			"update tbTurma set " +
-			"cod_turma = ?, " +
-                        "nome_turma= ?,";
-
+			"update TB_TURMA set " +
+			"NM_TURMA = ?, " +
+            "PRD_TURMA = ?,";
 	
 	private static final  String CONSULTA_TURMA =
-			"select * from tbTurmaorder by nome_turma";
+			"select * from TB_TURMA order by NM_TURMA";
 
 	private static final  String CONSULTA_TURMA_NOME =
-			"select * from tbTurma where nome_turma like ? order by nome_turma";
+			"select * from TB_TURMA where NM_TURMA like ? order by NM_TURMA asc";
 
 	private static final  String CONSULTA_TURMA_COD = 
-			"select * from tbTurma where codTurma = ?";
+			"select * from TB_TURMA where COD_TURMA = ?";
 
 
-	public List<Turma> consultarFuncionarios(String nome) throws DaoException{		
+	public List<TurmaBean> consultarTurma(String nmTurma) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
-		List<Turma> listaFunc = new ArrayList<Turma>();
+		List<TurmaBean> listaTurma = new ArrayList<TurmaBean>();
 		try {
-			if(nome.equals("")){
+			if(nmTurma.equals("")){
 				statement = conn.prepareStatement(CONSULTA_TURMA);
 			}else{
 				statement = conn.prepareStatement(CONSULTA_TURMA_NOME);
-				statement.setString(1, "%"+nome+"%");
+				statement.setString(1, "%"+nmTurma+"%");
 			}
 			result = statement.executeQuery();
 			while (result.next()) {
-				Turma objTurma = new Turma();
-				objTurma.setCodTurma(result.getInt(1));
-				objTurma.setNome(result.getString(2));
-                                listaFunc.add(objTurma);
+				TurmaBean objTurm = new TurmaBean();
+				objTurm.setCodTurma(result.getInt(1));
+				objTurm.setNmTurma(result.getString(2));
+				objTurm.setPrdTurma(result.getString(3));
+                listaTurma.add(objTurm);
 			}
 		} catch (SQLException e) {
 			throw new DaoException(e);
 		} finally {
 			DbUtil.close(conn, statement, result);
 		}
-		return listaFunc;		
+		return listaTurma;
 	}
 
-	public Turma consultarTurmaCod(int codTurma) throws DaoException{		
-		Turma objTurma = new Turma();
+	public TurmaBean consultarTurmaCod(int codTurma) throws DaoException{		
+		TurmaBean objTurm = new TurmaBean();
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
@@ -73,26 +73,27 @@ public class TurmaDao {
 			statement.setInt(1, codTurma);
 			result = statement.executeQuery();
 			while (result.next()) {
-				objTurma.setCodTurma(result.getInt(1));
-				objTurma.setNome(result.getString(2));
-                                
-                        }
+				objTurm.setCodTurma(result.getInt(1));
+				objTurm.setNmTurma(result.getString(2));
+                objTurm.setPrdTurma(result.getString(3));         
+			}
 		} catch (SQLException e) {
 			throw new DaoException(e);
 		} finally {
 			DbUtil.close(conn, statement, result);
 		}
-		return objTurma;		
+		return objTurm;
 	}
 
-	public boolean inserirTurma(Turma obj) throws DaoException{		
+	public boolean inserirTurma(TurmaBean obj) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(INSERIR_TURMA);
 			statement.setInt(1, obj.getCodTurma());
-                        statement.setString(2,obj.getNome());
+            statement.setString(2,obj.getNmTurma());
+            statement.setString(3, obj.getPrdTurma());
 			statement.executeUpdate();
 
 		} catch (SQLException e) {
@@ -100,17 +101,18 @@ public class TurmaDao {
 		} finally {
 			DbUtil.close(conn, statement, result);
 		}
-		return true;		
+		return true;
 	}
 
-	public boolean atualizarTurma(Turma objTurma) throws DaoException{		
+	public boolean atualizarTurma(TurmaBean objTurm) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(ATUALIZAR_TURMA);
-			statement.setInt(1, objTurma.getCodTurma());
-                        statement.setString(2,objTurma.getNome());
+			statement.setInt(1, objTurm.getCodTurma());
+            statement.setString(2,objTurm.getNmTurma());
+            statement.setString(3, objTurm.getPrdTurma());
 			statement.executeUpdate();
 
 		} catch (SQLException e) {
@@ -118,10 +120,10 @@ public class TurmaDao {
 		} finally {
 			DbUtil.close(conn, statement, result);
 		}
-		return true;		
+		return true;
 	}
 
-	public boolean excluirFuncionarios(int codTurma) throws DaoException{		
+	public boolean excluirTurma(int codTurma) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
@@ -137,12 +139,4 @@ public class TurmaDao {
 		}
 		return true;		
 	}
-
-    public boolean getAutenticacao(String nome, String senha) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public Turma consultarFuncionarios(Integer mat) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

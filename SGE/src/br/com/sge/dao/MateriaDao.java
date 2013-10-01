@@ -7,86 +7,75 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.sge.bean.Materia;
+import br.com.sge.bean.MateriaBean;
 import br.com.sge.exception.DaoException;
 import br.com.sge.util.DbUtil;
 
-/**
- *
- * @author Familia
- */
 public class MateriaDao {
     
     private static final String EXCLUIR_MATERIA = 
-			"delete from tbMateria where codMateria = ?";
+			"delete from TB_MATERIA where COD_MATERIA = ?";
 
 	private static final String INSERIR_MATERIA =
-			"insert into tbMateria(cod_Materia, prof_materia, nome_materia, carga_materia"+
-			"values (?,?,?,?)";
+			"insert into TB_MATERIA(NM_MATERIA "+
+			"values (?)";
 
-	private static final String ATUALIZAR_MATERIA =
-			"update tbMateria set " +
-			"cod_Materia = ?, " +
-                        "prof_materia = ?," +
-                        "nome_materia = ?," +
-			"carga_materia = ?, ";
+	private static final String ATUALIZAR_ALUNO =
+			"update TB_ALUNO set " +
+            "NM_MATERIA = ?, ";
 
 	
-	private static final  String CONSULTA_MATERIAS =
-			"select * from tbMateria order by nome_materia";
+	private static final  String CONSULTA_MATERIA =
+			"select * from TB_MATERIA order by NM_MATERIA asc";
 
-	private static final  String CONSULTA_MATERIAS_NOME =
-			"select * from tbMateria where nome_materia like ? order by nome_funcionario";
+	private static final  String CONSULTA_MATERIA_NOME =
+			"select * from TB_MATERIA where NM_MATERIA like ? order by NM_MATERIA";
 
-	private static final  String CONSULTA_MATERIAS_COD = 
-			"select * from tbMateria where codFuncionario = ?";
+	private static final  String CONSULTA_MATERIA_COD = 
+			"select * from TB_MATERIA where COD_MATERIA = ?";
 
 
-	public List<Materia> consultarMaterias(String nome) throws DaoException{		
+	public List<MateriaBean> consultarMateria(String nmMateria) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
-		List<Materia> listaMat = new ArrayList<Materia>();
+		List<MateriaBean> listaMat = new ArrayList<MateriaBean>();
 		try {
-			if(nome.equals("")){
-				statement = conn.prepareStatement(CONSULTA_MATERIAS);
+			if(nmMateria.equals("")){
+				statement = conn.prepareStatement(CONSULTA_MATERIA);
 			}else{
-				statement = conn.prepareStatement(CONSULTA_MATERIAS_NOME);
-				statement.setString(1, "%"+nome+"%");
+				statement = conn.prepareStatement(CONSULTA_MATERIA_NOME);
+				statement.setString(1, "%"+nmMateria+"%");
 			}
 			result = statement.executeQuery();
 			while (result.next()) {
-				Materia objMat = new Materia();
+				MateriaBean objMat = new MateriaBean();
 				objMat.setCodMateria(result.getInt(1));
-				objMat.setProfessor(result.getString(2));
-                                objMat.setNome(result.getString(3));
-				objMat.setCarga(result.getString(4));
-                                listaMat.add(objMat);
+				objMat.setNmMateria(result.getString(2));
+                listaMat.add(objMat);
 			}
 		} catch (SQLException e) {
 			throw new DaoException(e);
 		} finally {
 			DbUtil.close(conn, statement, result);
 		}
-		return listaMat;		
+		return listaMat;
 	}
 
-	public Materia consultarMateriaCod(int codMateria) throws DaoException{		
-		Materia objMat = new Materia();
+	public MateriaBean consultarmateriaCod(int codMateria) throws DaoException{		
+		MateriaBean objMat = new MateriaBean();
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
-			statement = conn.prepareStatement(CONSULTA_MATERIAS_COD);
+			statement = conn.prepareStatement(CONSULTA_MATERIA_COD);
 			statement.setInt(1, codMateria);
 			result = statement.executeQuery();
 			while (result.next()) {
 				objMat.setCodMateria(result.getInt(1));
-				objMat.setProfessor(result.getString(2));
-                                objMat.setNome(result.getString(3));
-				objMat.setCarga(result.getString(4));
-                                
-                        }
+				objMat.setNmMateria(result.getString(2));
+                
+			}
 		} catch (SQLException e) {
 			throw new DaoException(e);
 		} finally {
@@ -95,16 +84,13 @@ public class MateriaDao {
 		return objMat;		
 	}
 
-	public boolean inserirMaterias(Materia obj) throws DaoException{		
+	public boolean inserirMateria(MateriaBean obj) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(INSERIR_MATERIA);
-			statement.setInt(1, obj.getCodMateria());
-                        statement.setString(2,obj.getProfessor());
-			statement.setString(3, obj.getNome());
-			statement.setString(4, obj.getCarga());
+			statement.setString(1, obj.getNmMateria());
 			statement.executeUpdate();
 
 		} catch (SQLException e) {
@@ -112,19 +98,16 @@ public class MateriaDao {
 		} finally {
 			DbUtil.close(conn, statement, result);
 		}
-		return true;		
+		return true;
 	}
 
-	public boolean atualizarMateria(Materia objMat) throws DaoException{		
+	public boolean atualizarMateria(MateriaBean objAlun) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
-			statement = conn.prepareStatement(ATUALIZAR_MATERIA);
-			statement.setInt(1, objMat.getCodMateria());
-                        statement.setString(2,objMat.getProfessor());
-			statement.setString(3, objMat.getNome());
-			statement.setString(4, objMat.getCarga());
+			statement = conn.prepareStatement(ATUALIZAR_ALUNO);
+			statement.setString(1, objAlun.getNmMateria());
 			statement.executeUpdate();
 
 		} catch (SQLException e) {
@@ -135,7 +118,7 @@ public class MateriaDao {
 		return true;		
 	}
 
-	public boolean excluirMaterias(int codMateria) throws DaoException{		
+	public boolean excluirMateria(int codMateria) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
@@ -151,12 +134,4 @@ public class MateriaDao {
 		}
 		return true;		
 	}
-
-    public boolean getAutenticacao(String nome, String senha) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public Materia consultarMaterias(Integer mat) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

@@ -16,6 +16,19 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NOME_COMPLETO" id="35C8DDDA-BA12-CA81-99FD-10FC109A8168">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 20:05:57 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
 <Attribute name="NM_USUARIO" id="325147C8-65DE-56D6-BB14-4DCCDC7CCA5C">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 19:14:48 UTC</createdTime>
@@ -45,19 +58,6 @@
 <Attribute name="EMAIL_USUARIO" id="FEFA2A97-83DF-D11C-0D5F-4314E5E6B841">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 19:15:17 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>120</dataTypeSize>
-</Attribute>
-<Attribute name="NOME_COMPLETO" id="35C8DDDA-BA12-CA81-99FD-10FC109A8168">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 20:05:57 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>TCC_MODELO</ownerDesignName>
 <engineerTo>

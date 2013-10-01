@@ -19,8 +19,8 @@
    <object objectType="Relation" objectID="CC8508E6-2650-0909-91EF-421F9483583E" name="FK_CIDADE_BAIRRO" seqName="seg_0"/>
    <object objectType="Relation" objectID="4995143B-3859-F9F0-711A-A4F49A60CF04" name="FK_CIDADE_ENDERECO" seqName="seg_0"/>
    <object objectType="Relation" objectID="1F060719-A635-8559-D829-2BA9FFF846EF" name="FK_ENDERECO_RESPONSAVEL" seqName="seg_0"/>
+   <object objectType="Relation" objectID="48CDD36E-B88E-8862-F5B8-3D1D425FECFA" name="FK_TURMA_ALUNO" seqName="seg_0"/>
    <object objectType="Relation" objectID="034DBD93-4F2E-09FC-3625-9C4C0C692CF6" name="TB_ALUNO_OCORRENCIA_FK" seqName="seg_0"/>
-   <object objectType="Relation" objectID="CEC58C31-1824-6F23-6A01-2154C714CA53" name="TB_ALUNO_TURMA_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="52DD26DD-EAB5-B552-BD7B-864915187423" name="TB_ATIVIDADE_PROFESSOR_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="F7BF1B65-E614-5909-3C77-9894250531BD" name="TB_PROFESSOR_AULA_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="AA55D17A-31BD-02CF-0BAE-2390D6750508" name="TB_RESPONSAVEL_ALUNO_FK" seqName="seg_0"/>

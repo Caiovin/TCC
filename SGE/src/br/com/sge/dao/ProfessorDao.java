@@ -17,14 +17,13 @@ public class ProfessorDao {
 			"delete from TB_PROFESSOR where COD_PROFESSOR = ?";
 
 	private static final String INSERIR_PROFESSOR =
-			"insert into TB_PROFESSOR(COD_PROFESSOR, NM_PROFESSOR, SEXO_PROFESSOR, RG_PROFESSOR, CPF_PROFESSOR "+
+			"insert into TB_PROFESSOR(NM_PROFESSOR, SEXO_PROFESSOR, RG_PROFESSOR, CPF_PROFESSOR "+
             "DT_NASC_PROFESSOR, TEL_PROFESSOR, CEL_PROFESSOR, END_PROFESSOR, EMAIL_PROFESSOR, PRD_PROFESSOR "+
-            "values (?,?,?,?,?,?,?,?,?,?,?)";
+            "values (?,?,?,?,?,?,?,?,?,?)";
 
 	private static final String ATUALIZAR_PROFESSOR =
 			"update TB_PROFESSOR set " +
-			"COD_PROFESSOR = ?, " +
-            "NM_PROFESSOR = ?," +
+			"NM_PROFESSOR = ?," +
             "SEXO_PROFESSOR = ?," +
 			"RG_PROFESSOR = ?, " +
             "CPF_PROFESSOR = ?, " +
@@ -117,17 +116,16 @@ public class ProfessorDao {
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(INSERIR_PROFESSOR);
-			statement.setInt(1, obj.getCodProfessor());
-            statement.setString(2,obj.getNmProfessor());
-			statement.setString(3, obj.getSexoProfessor());
-			statement.setString(4, obj.getRgProfessor());
-			statement.setString(5, obj.getCpfProfessor());
-			statement.setString(6, obj.getDtNasProfessor());
-			statement.setString(7, obj.getTelProfessor());
-			statement.setString(8, obj.getCelProfessor());
-            statement.setString(9, obj.getEndProfessor());
-            statement.setString(10, obj.getEmaiProfessor());
-            statement.setString(11, obj.getPrdProfessor());
+			statement.setString(1, obj.getNmProfessor());
+			statement.setString(2, obj.getSexoProfessor());
+			statement.setString(3, obj.getRgProfessor());
+			statement.setString(4, obj.getCpfProfessor());
+			statement.setString(5, obj.getDtNasProfessor());
+			statement.setString(6, obj.getTelProfessor());
+			statement.setString(7, obj.getCelProfessor());
+            statement.setString(8, obj.getEndProfessor());
+            statement.setString(9, obj.getEmaiProfessor());
+            statement.setString(10, obj.getPrdProfessor());
             statement.executeUpdate();
 
 		} catch (SQLException e) {
@@ -144,17 +142,16 @@ public class ProfessorDao {
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(ATUALIZAR_PROFESSOR);
-			statement.setInt(1, objFunc.getCodProfessor());
-            statement.setString(2,objFunc.getNmProfessor());
-			statement.setString(3, objFunc.getSexoProfessor());
-			statement.setString(4, objFunc.getRgProfessor());
-			statement.setString(5, objFunc.getCpfProfessor());
-			statement.setString(6, objFunc.getDtNasProfessor());
-			statement.setString(7, objFunc.getTelProfessor());
-			statement.setString(8, objFunc.getCelProfessor());
-            statement.setString(9, objFunc.getEndProfessor());
-            statement.setString(10, objFunc.getEmaiProfessor());
-            statement.setString(11, objFunc.getPrdProfessor());
+			statement.setString(1, objFunc.getNmProfessor());
+			statement.setString(2, objFunc.getSexoProfessor());
+			statement.setString(3, objFunc.getRgProfessor());
+			statement.setString(4, objFunc.getCpfProfessor());
+			statement.setString(5, objFunc.getDtNasProfessor());
+			statement.setString(6, objFunc.getTelProfessor());
+			statement.setString(7, objFunc.getCelProfessor());
+            statement.setString(8, objFunc.getEndProfessor());
+            statement.setString(9, objFunc.getEmaiProfessor());
+            statement.setString(10, objFunc.getPrdProfessor());
             statement.executeUpdate();
 
 		} catch (SQLException e) {
