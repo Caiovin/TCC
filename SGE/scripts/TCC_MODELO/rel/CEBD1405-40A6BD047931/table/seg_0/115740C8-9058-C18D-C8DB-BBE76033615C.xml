@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="115740C8-9058-C18D-C8DB-BBE76033615C" name="TB_BAIRRO">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>6DE48B1B-2D9C-AD0A-8AE9-37DC3452CBEC</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_BAIRRO" id="A9C2FEB8-720E-68CA-1613-F8F104445357">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>3D684912-58DE-900E-5B7C-48DC3D1EB00A</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CIDADE" id="57BD3290-349B-3D77-BC8D-A1D8268BD300">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>22012035-5703-FEB1-7A18-AC1E86E08AAC</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>C6B4818A-32A5-3E9D-3218-14A7F4F5C1B1</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="823713FC-8167-1BAB-C949-33FB7B9CA4C0" referredColumn="C6B4818A-32A5-3E9D-3218-14A7F4F5C1B1"/>
+</associations>
+</Column>
+<Column name="BAIRRO" id="7D3CAEFF-DF78-FB7C-370C-48471102FA13">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>2D6FBC3C-3F9E-5126-61A5-8973136E9311</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6C8E2AB4-AFA5-294F-27D1-479FEC81E3FB" name="TB_BAIRRO_PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>43F6E81E-DFE2-05A1-823D-205E635BF693</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9C2FEB8-720E-68CA-1613-F8F104445357"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A78510E-5E53-8C62-0762-AB31DE903D8C" name="TB_BAIRRO_TB_CIDADE_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>CC8508E6-2650-0909-91EF-421F9483583E</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57BD3290-349B-3D77-BC8D-A1D8268BD300"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

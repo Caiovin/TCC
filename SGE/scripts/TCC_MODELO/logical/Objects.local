@@ -6,24 +6,36 @@
    <object objectType="Entity" objectID="6DE48B1B-2D9C-AD0A-8AE9-37DC3452CBEC" name="TB_BAIRRO" seqName="seg_0"/>
    <object objectType="Entity" objectID="9F675B3F-8F2D-A01E-ED88-24003848C915" name="TB_CIDADE" seqName="seg_0"/>
    <object objectType="Entity" objectID="697EF14D-EC93-1F62-11B3-504C3D63D1AB" name="TB_ENDERECO" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6A8D33A2-8C8B-D729-43A9-A1C20B36ADDE" name="TB_ENTREGA_ATIVIDADE" seqName="seg_0"/>
    <object objectType="Entity" objectID="26B30E59-E18F-63D1-06E6-2D85D43D630C" name="TB_FREQUENCIA" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6CC57181-324F-8CB7-ECA9-C2E7D8A949D1" name="TB_GRUPO" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8C36B089-5A30-62F2-7D5C-1BFC35181E2E" name="TB_LISTA_PERMISSOES" seqName="seg_0"/>
    <object objectType="Entity" objectID="7393F62A-806F-39B3-D8E0-4B0D2EA51828" name="TB_MATERIA" seqName="seg_0"/>
+   <object objectType="Entity" objectID="2AAA0F94-0283-2C57-AF45-5F56A18039CB" name="TB_MENU" seqName="seg_0"/>
    <object objectType="Entity" objectID="989BE9BD-755D-1154-DCA5-D6502AA683AC" name="TB_OCORRENCIA" seqName="seg_0"/>
    <object objectType="Entity" objectID="E4AF3617-32E5-9F6F-8894-BF98AC88F1DD" name="TB_PROFESSOR" seqName="seg_0"/>
+   <object objectType="Entity" objectID="5AE982F6-DA90-4FE2-4426-CF5284259422" name="TB_REGRA" seqName="seg_0"/>
    <object objectType="Entity" objectID="81145E2B-7248-4C54-39C1-117B70B5A787" name="TB_RESPONSAVEL" seqName="seg_0"/>
    <object objectType="Entity" objectID="19F49BC1-FDC8-53E6-1DB6-B16D491A40F4" name="TB_TURMA" seqName="seg_0"/>
-   <object objectType="Entity" objectID="DFDA740F-7476-E68C-3F0E-E45A1B035C82" name="TB_USUARIO" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F1EADC77-2B27-D0E7-60D0-697C0F924DC3" name="TB_USUARIO" seqName="seg_0"/>
    <object objectType="Relation" objectID="C0F0B4E9-9069-D4C9-367D-D91BB9A870D6" name="FK_AULA_FREQUENCIA" seqName="seg_0"/>
-   <object objectType="Relation" objectID="568A2A82-B406-1B92-B66C-E1585DB43806" name="FK_AULA_MATERIA" seqName="seg_0"/>
    <object objectType="Relation" objectID="2FA336C7-D054-4DAE-3321-B0B8821F6B2C" name="FK_BAIRRO_ENDERECO" seqName="seg_0"/>
    <object objectType="Relation" objectID="CC8508E6-2650-0909-91EF-421F9483583E" name="FK_CIDADE_BAIRRO" seqName="seg_0"/>
    <object objectType="Relation" objectID="4995143B-3859-F9F0-711A-A4F49A60CF04" name="FK_CIDADE_ENDERECO" seqName="seg_0"/>
    <object objectType="Relation" objectID="1F060719-A635-8559-D829-2BA9FFF846EF" name="FK_ENDERECO_RESPONSAVEL" seqName="seg_0"/>
    <object objectType="Relation" objectID="48CDD36E-B88E-8862-F5B8-3D1D425FECFA" name="FK_TURMA_ALUNO" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D3ECD01A-9F47-7DE7-96F6-E2040BDC356C" name="Relation_14" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F98895CB-2ED3-7F9F-E07D-A0302D47A8F4" name="Relation_15" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5467AE89-804E-F8F2-5B06-37EFE535B524" name="Relation_16" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5AE18EA0-4918-6C1B-790C-26098E008C4F" name="Relation_17" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D598A03A-7490-A29E-A00F-836171EFB8F5" name="Relation_18" seqName="seg_0"/>
+   <object objectType="Relation" objectID="1C2A8185-A3C0-E29C-FA8E-9835147274CA" name="Relation_19" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C78D7D71-49F4-19E7-1B63-E502B6D66EB3" name="Relation_20" seqName="seg_0"/>
+   <object objectType="Relation" objectID="EC6D038B-1C9F-47B4-6E61-BEB3150738F9" name="Relation_21" seqName="seg_0"/>
+   <object objectType="Relation" objectID="FAB88970-1CAD-ED43-56B5-5581639B6518" name="Relation_22" seqName="seg_0"/>
+   <object objectType="Relation" objectID="13C00E22-1CA7-F83F-B98A-1EFABCFE99EF" name="Relation_23" seqName="seg_0"/>
+   <object objectType="Relation" objectID="6E72E93A-E531-5944-5079-89F68379A0B4" name="Relation_24" seqName="seg_0"/>
    <object objectType="Relation" objectID="034DBD93-4F2E-09FC-3625-9C4C0C692CF6" name="TB_ALUNO_OCORRENCIA_FK" seqName="seg_0"/>
-   <object objectType="Relation" objectID="52DD26DD-EAB5-B552-BD7B-864915187423" name="TB_ATIVIDADE_PROFESSOR_FK" seqName="seg_0"/>
-   <object objectType="Relation" objectID="F7BF1B65-E614-5909-3C77-9894250531BD" name="TB_PROFESSOR_AULA_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="AA55D17A-31BD-02CF-0BAE-2390D6750508" name="TB_RESPONSAVEL_ALUNO_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="7E385B71-7BE1-E2A4-038F-277D73F677EE" name="TB_TURMA_ATIVIDADE_FK" seqName="seg_0"/>
-   <object objectType="Relation" objectID="16F46B71-D856-0D72-77B7-E247F296A8A6" name="TB_TURMA_AULA_FK" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0DA815EE-3DBE-2ECD-8E71-9CB74728CEB9" name="TB_ENDERECO">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>697EF14D-EC93-1F62-11B3-504C3D63D1AB</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CEP" id="B0D1B528-AA4D-BA64-7587-9FBEB17B6481">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>01C317BD-0077-697C-12BB-E64010D2D359</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENDERECO" id="06092FBF-E100-0B5C-6839-A13EB45C42BE">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>1FB242C9-E748-4C38-0E22-260F35F5A7CE</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CIDADE" id="9307C5C8-2296-D323-857E-5AC0F10C3DEE">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>B7E4B1B4-EC52-DCE2-45B9-3CB7EA8DF894</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>C6B4818A-32A5-3E9D-3218-14A7F4F5C1B1</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7DF3E48-6724-D5B3-5F3B-A39C5AC605E8" referredColumn="C6B4818A-32A5-3E9D-3218-14A7F4F5C1B1"/>
+</associations>
+</Column>
+<Column name="ID_BAIRRO" id="EB52794A-851D-E9BD-7869-38B83C3D8218">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>09B8CD42-AF7E-9240-DCEA-8942D943E6E2</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>A9C2FEB8-720E-68CA-1613-F8F104445357</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1381C889-7D27-4620-95ED-5E88E33AFF3B" referredColumn="A9C2FEB8-720E-68CA-1613-F8F104445357"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E931BF4E-435B-7B7B-5211-DA8B61862D3D" name="TB_ENDERECO_PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>39D253EF-3515-C47E-2E3B-16BE33A6F07A</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0D1B528-AA4D-BA64-7587-9FBEB17B6481"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F4DA56A-E108-FEA1-4B2E-CBEA71ABF09A" name="TB_ENDERECO_TB_BAIRRO_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>2FA336C7-D054-4DAE-3321-B0B8821F6B2C</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB52794A-851D-E9BD-7869-38B83C3D8218"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3043DAEE-5828-46AA-B05D-8E2523E174E0" name="TB_ENDERECO_TB_CIDADE_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>4995143B-3859-F9F0-711A-A4F49A60CF04</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9307C5C8-2296-D323-857E-5AC0F10C3DEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

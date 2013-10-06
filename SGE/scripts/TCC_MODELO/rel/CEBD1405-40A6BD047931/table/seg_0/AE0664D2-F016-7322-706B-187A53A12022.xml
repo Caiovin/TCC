@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE0664D2-F016-7322-706B-187A53A12022" name="TB_REGRA">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>5AE982F6-DA90-4FE2-4426-CF5284259422</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_REGRA" id="6BC851C6-28BD-9983-CCFA-2C9456E8D076">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>A46A69D8-A861-88F6-CFC0-AD7CB188E3FB</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCR_REGRA" id="F252B175-DCFB-F0C0-2228-FC8A9DA15008">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>A45B747E-17BE-0B0A-4967-CF9212C7C010</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_MENU" id="1F2BC4A5-D197-CC5B-AAE8-C2891EA681C5">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>1A84D983-412A-D6B6-4FF6-DB0C9ED551EE</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>E5743B5F-FF40-055C-DA53-E5ECE1A0A1EA</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD00CD07-FF82-4BA0-2A5E-A9DE78255D1A" referredColumn="E5743B5F-FF40-055C-DA53-E5ECE1A0A1EA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="699B3336-2C8D-BD84-6E50-B6AA68F03007" name="TB_REGRA_PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>DB9618F6-275F-E275-BBEF-A1A81E377E9C</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BC851C6-28BD-9983-CCFA-2C9456E8D076"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="254AE674-E700-D25F-CD72-61627DB4378D" name="TB_REGRA_TB_MENU_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>C78D7D71-49F4-19E7-1B63-E502B6D66EB3</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F2BC4A5-D197-CC5B-AAE8-C2891EA681C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

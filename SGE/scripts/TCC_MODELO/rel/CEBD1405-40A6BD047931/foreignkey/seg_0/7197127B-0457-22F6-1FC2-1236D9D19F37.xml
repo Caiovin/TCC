@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7197127B-0457-22F6-1FC2-1236D9D19F37" name="TB_FREQUENCIA_TB_TURMA_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>F98895CB-2ED3-7F9F-E07D-A0302D47A8F4</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<containerWithKeyObject>8086DEF4-05D7-174C-4650-4580C7D474CE</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>16E445F1-BD8D-A5D8-6931-1A0BFAFE95F8</localFKIndex>
+<keyObject>61ECC6C4-29F6-773C-13A3-37FD8ED817D9</keyObject>
+<mandatory>true</mandatory>
+<transferable>false</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

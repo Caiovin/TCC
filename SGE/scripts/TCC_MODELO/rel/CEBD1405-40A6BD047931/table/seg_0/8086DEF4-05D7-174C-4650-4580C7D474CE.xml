@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8086DEF4-05D7-174C-4650-4580C7D474CE" name="TB_FREQUENCIA">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>26B30E59-E18F-63D1-06E6-2D85D43D630C</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RM_ALUNO" id="4D2B077A-B028-859D-7AE9-7339BDE35CED">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>E9B78600-8541-671C-17D0-BF397A2BE972</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9F6C11C4-ECD4-8796-3AF5-835A9640EB9E</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2348E70-5BF3-64AB-ECBB-0C6CDD82507F" referredColumn="9F6C11C4-ECD4-8796-3AF5-835A9640EB9E"/>
+</associations>
+</Column>
+<Column name="COD_AULA" id="47593246-BB3A-B948-1FFA-A6965044CF81">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>08B9C000-5914-7CB5-F665-2EC8DB6BCC90</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>451E97A3-483B-B6EC-9FC4-2E586465A973</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7A79691-1D88-B683-43CD-F28FA614F0B8" referredColumn="451E97A3-483B-B6EC-9FC4-2E586465A973"/>
+</associations>
+</Column>
+<Column name="COD_TURMA" id="4B23CFCE-E5B5-225D-EFA1-8DF8D92DBB56">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>9E75CA94-2E06-FA62-8232-598C73953243</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>DD780586-65F1-A9E9-B388-BEA7A8F7E2B8</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7197127B-0457-22F6-1FC2-1236D9D19F37" referredColumn="DD780586-65F1-A9E9-B388-BEA7A8F7E2B8"/>
+</associations>
+</Column>
+<Column name="ALUNO_PRESENTE" id="4C4FB64D-A6FC-B501-69F1-BD56787763E6">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>776BC48E-455E-C51A-6D3E-82B1197AAC26</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<defaultValue>P</defaultValue>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6B76A3AD-5077-3C75-B36D-974E9A540872</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBS" id="DC163749-1367-552B-ED87-96F40F82A1BF">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>C3D4D959-171C-FE59-266A-50FDDC09CFA4</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB4269E6-9940-732A-DBBF-12E5C140036D" name="TB_FREQUENCIA_PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>1EE1F0D4-19BE-F5CE-EDC0-3E403D9C07A0</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47593246-BB3A-B948-1FFA-A6965044CF81"/>
+<colUsage columnID="4B23CFCE-E5B5-225D-EFA1-8DF8D92DBB56"/>
+<colUsage columnID="4D2B077A-B028-859D-7AE9-7339BDE35CED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09AEF586-77B7-FEF4-D5A0-84B92882A3DF" name="TB_FREQUENCIA_TB_AULA_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>C0F0B4E9-9069-D4C9-367D-D91BB9A870D6</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47593246-BB3A-B948-1FFA-A6965044CF81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16E445F1-BD8D-A5D8-6931-1A0BFAFE95F8" name="TB_FREQUENCIA_TB_TURMA_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>F98895CB-2ED3-7F9F-E07D-A0302D47A8F4</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B23CFCE-E5B5-225D-EFA1-8DF8D92DBB56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F1D5524-D73A-1565-07E2-28D3B5A07188" name="TB_FREQUENCIA_TB_ALUNO_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>5467AE89-804E-F8F2-5B06-37EFE535B524</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D2B077A-B028-859D-7AE9-7339BDE35CED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

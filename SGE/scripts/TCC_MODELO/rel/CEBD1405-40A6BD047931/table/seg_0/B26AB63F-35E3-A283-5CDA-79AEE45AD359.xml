@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B26AB63F-35E3-A283-5CDA-79AEE45AD359" name="TB_OCORRENCIA">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>989BE9BD-755D-1154-DCA5-D6502AA683AC</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_OCORRENCIA" id="6C7E01E6-610E-1894-07E2-B889C65BD5C9">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>641B63A3-E177-0717-5E25-E262C92D9D61</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RM_ALUNO" id="17DC41A6-A7A4-10E7-9B06-779FC0C56614">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>951800C9-2261-02F2-8808-751B4119F807</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9F6C11C4-ECD4-8796-3AF5-835A9640EB9E</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B121F75-3DC9-7EC5-DA7F-6265EBCD749D" referredColumn="9F6C11C4-ECD4-8796-3AF5-835A9640EB9E"/>
+</associations>
+</Column>
+<Column name="DESC_OCORRENCIA" id="046CE535-A744-D17E-E213-0C0654FA67D1">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>BF596ECB-F9D2-F259-C9A8-53406F1092E9</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_OCORRENCIA" id="FE2AF91C-73A7-71EA-0B81-2FFB6B963852">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>6191D0E0-FAE3-0679-DCBC-428C8148D6A1</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78D037E5-5CAD-7C2A-D28B-14B708574E09" name="TB_OCORRENCIA_PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>3FEE0B0E-9FF0-5859-8951-77C8A68667A0</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C7E01E6-610E-1894-07E2-B889C65BD5C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="606E2AA7-29DE-DDA7-D372-A2D84237C39D" name="TB_OCORRENCIA_TB_ALUNO_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>034DBD93-4F2E-09FC-3625-9C4C0C692CF6</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17DC41A6-A7A4-10E7-9B06-779FC0C56614"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

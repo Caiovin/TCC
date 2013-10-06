@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8C36B089-5A30-62F2-7D5C-1BFC35181E2E" name="TB_LISTA_PERMISSOES">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 18:09:43 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_REGRA" id="1EA2E78E-3032-6A02-714E-22716A56FB41">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 18:15:33 UTC</createdTime>
+<generatorID>EC6D038B-1C9F-47B4-6E61-BEB3150738F9</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>A46A69D8-A861-88F6-CFC0-AD7CB188E3FB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</Attribute>
+<Attribute name="ID_GRUPO" id="C4D108C5-9863-137C-E4B7-15BFFB24D8F7">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 18:15:54 UTC</createdTime>
+<generatorID>FAB88970-1CAD-ED43-56B5-5581639B6518</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>EB33EC41-CAFE-0993-2975-FF14D41C1E43</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C95E71E2-A6B1-3393-6B9B-3523A1C125E3" name="TB_LISTA_PERMISSOES PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 18:15:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1EA2E78E-3032-6A02-714E-22716A56FB41</attributeRef>
+<attributeRef>C4D108C5-9863-137C-E4B7-15BFFB24D8F7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3CDACB9-7D9F-D75C-DD09-6B3F0A86A4D2" name="TB_RESPONSAVEL">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>81145E2B-7248-4C54-39C1-117B70B5A787</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_RESPONSAVEL" id="A9AF5A2A-1CE7-D1F9-0388-A99CE4FCCF28">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>AA127540-9420-F322-1871-C440D8FED7A0</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_RESPONSAVEL" id="BCC34DEE-75F9-F668-7AE7-C18154953C7F">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>9EE5E4BE-C65E-54BF-84E1-D4CF7A786C2B</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEL_RESPONSAVEL" id="788741FF-18E4-B2C5-C208-6C65C9E635E8">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>E232EA5E-FD49-B8B7-D9C0-26685EFFC5C1</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEL_RESPONSAVEL" id="B57F8602-20A7-1477-4E89-90F7D749FD9D">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>E0AD3CAC-AE0E-95A1-D500-ED0BD04B4C73</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEP" id="86DA2F73-3FC6-6C5A-CD2A-94910EBD3DA8">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>FEE9CB5A-203B-E143-2440-DA7A0DD2F5D0</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<delegate>B0D1B528-AA4D-BA64-7587-9FBEB17B6481</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ABBEB4F8-D7A6-523F-7D2C-11C2660905D6" referredColumn="B0D1B528-AA4D-BA64-7587-9FBEB17B6481"/>
+</associations>
+</Column>
+<Column name="NUM_ENDERECO" id="ECB3E007-8AFD-8771-9446-4FF9FE7A7057">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>A784DA10-452A-D20F-2739-9BCF036902CD</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMPLEMENTO" id="ED0BE37D-CBA0-A522-1789-FBD0145C8D66">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>0A3D67B4-D472-2D99-DC00-8358FA1925CC</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL_RESPONSAVEL" id="A2D0BCB0-88C6-3D5E-8057-F0F4C733A4AB">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>2D92C860-484F-D1ED-13FC-178CBB2119E5</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6C98016-6B25-A6EC-A8FF-442C01694660" name="TB_RESPONSAVEL_PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>37243C6E-7244-7434-A55C-67A64DE2956A</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9AF5A2A-1CE7-D1F9-0388-A99CE4FCCF28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3262F20D-484C-CD85-5F42-305A6874AC2B" name="TB_RESPONSAVEL_TB_ENDERECO_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>1F060719-A635-8559-D829-2BA9FFF846EF</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86DA2F73-3FC6-6C5A-CD2A-94910EBD3DA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

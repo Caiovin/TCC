@@ -41,6 +41,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
+<Attribute name="COD_TURMA" id="DBCAFA4F-16C5-E15C-EDEC-4F155DC010C3">
+<createdBy>Familia</createdBy>
+<createdTime>2013-09-28 21:24:30 UTC</createdTime>
+<generatorID>48CDD36E-B88E-8862-F5B8-3D1D425FECFA</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>FF72AF06-EB34-0435-3B50-8025EC53CB05</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
 <Attribute name="NM_ALUNO" id="1511E118-8A64-5C3F-664D-64C6C9B55A5A">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 18:54:01 UTC</createdTime>
@@ -62,10 +75,10 @@
 <engineerTo>
 <item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
 <defaultValue>F</defaultValue>
-<use>0</use>
+<use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<domain>C4349FD9-BDC3-7DEB-370E-247D47E2BA09</domain>
 </Attribute>
 <Attribute name="RG_ALUNO" id="2467498C-C4A0-AE49-9ABF-290126E6871B">
 <createdBy>Familia</createdBy>
@@ -133,19 +146,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>11</dataTypeSize>
 </Attribute>
-<Attribute name="END_ALUNO" id="1891481F-746C-7DE4-33CD-2EB2E43C70A8">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 18:59:34 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200</dataTypeSize>
-</Attribute>
 <Attribute name="EMAIL_ALUNO" id="CCA4252D-7374-11DA-01CD-F77EB541B9D0">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 19:00:06 UTC</createdTime>
@@ -159,58 +159,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>120</dataTypeSize>
-</Attribute>
-<Attribute name="NM_TURMA" id="BD1A1B64-970B-68B0-F5DA-9E988292746E">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 19:01:06 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>120</dataTypeSize>
-</Attribute>
-<Attribute name="COD_TURMA" id="DBCAFA4F-16C5-E15C-EDEC-4F155DC010C3">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 21:24:30 UTC</createdTime>
-<generatorID>48CDD36E-B88E-8862-F5B8-3D1D425FECFA</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<referedAttribute>FF72AF06-EB34-0435-3B50-8025EC53CB05</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
-<Attribute name="NM_RESPONSAVEL" id="0C061F4B-1457-066D-1C61-01FF57CA9EFB">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 19:02:08 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>120</dataTypeSize>
-</Attribute>
-<Attribute name="PRD_ALUNO" id="4CE2E311-884C-E681-0B15-E70E8A9EEC60">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 19:34:48 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<defaultValue>M</defaultValue>
-<use>0</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<domain>DFCE1C38-2042-0FD7-F70F-A9856B9AF5F4</domain>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

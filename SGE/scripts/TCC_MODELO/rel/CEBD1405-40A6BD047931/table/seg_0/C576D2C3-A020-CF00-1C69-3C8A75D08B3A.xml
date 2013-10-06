@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C576D2C3-A020-CF00-1C69-3C8A75D08B3A" name="TB_AULA">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>724DD4F7-29A1-5849-ADE0-24E648EA1D31</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_AULA" id="451E97A3-483B-B6EC-9FC4-2E586465A973">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>BB95A342-CA5E-5B5F-1CBD-AD7AF63A8CB5</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MATERIA" id="4F9DC632-E347-C531-0294-AEC3B600C606">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>3A936B89-194A-2EA0-92FF-42E15CAAAECC</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>A88429C0-4C4F-8A9C-E5AA-ADDC953269E5</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73E64D10-3F32-EC45-FE56-BBC1FCDC5DF8" referredColumn="A88429C0-4C4F-8A9C-E5AA-ADDC953269E5"/>
+</associations>
+</Column>
+<Column name="DATA_HORA" id="9C4F46D5-3D03-BBD1-D2BB-05DA9210D894">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>EBB31FB0-1FD4-856B-CD42-6DEEFB262B69</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCR_ATIVIDADES" id="39CDE6C8-DC1C-D63A-AF40-087FE7AC90CA">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>7C6DCDA2-3893-6339-E3A9-1AA8ACDB4C10</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4DF4AF93-1C6F-9075-309E-79849F532FEC" name="TB_AULA_PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>D7D70231-42E5-C8B8-65E5-0F496F5F4758</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="451E97A3-483B-B6EC-9FC4-2E586465A973"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50BE1446-6CC3-BC22-6391-48BC22D37E28" name="TB_AULA_TB_MATERIA_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>5AE18EA0-4918-6C1B-790C-26098E008C4F</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F9DC632-E347-C531-0294-AEC3B600C606"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

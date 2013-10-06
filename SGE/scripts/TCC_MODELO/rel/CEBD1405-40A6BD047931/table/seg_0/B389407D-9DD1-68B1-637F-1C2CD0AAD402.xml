@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B389407D-9DD1-68B1-637F-1C2CD0AAD402" name="TB_ALUNO">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>D8AEA5C8-9CE0-ADCE-8963-AB8DA983E192</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RM_ALUNO" id="9F6C11C4-ECD4-8796-3AF5-835A9640EB9E">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>B086FC4E-2920-AC6A-4F5E-FD89763053D7</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_RESPONSAVEL" id="A6E1E947-F1B5-66BD-01E2-BF844080D477">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>6DDE1CAE-DB1A-F79D-EBFB-C0D15D3EAFA9</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>A9AF5A2A-1CE7-D1F9-0388-A99CE4FCCF28</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08020001-47F0-63DC-A85E-C332CC0B4DA2" referredColumn="A9AF5A2A-1CE7-D1F9-0388-A99CE4FCCF28"/>
+</associations>
+</Column>
+<Column name="COD_TURMA" id="BCDB4791-366A-43C4-30A7-0E6F07C84AE3">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>DBCAFA4F-16C5-E15C-EDEC-4F155DC010C3</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>DD780586-65F1-A9E9-B388-BEA7A8F7E2B8</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2D006EF-7FA9-98BA-11DA-ED4727941016" referredColumn="DD780586-65F1-A9E9-B388-BEA7A8F7E2B8"/>
+</associations>
+</Column>
+<Column name="NM_ALUNO" id="4A3F4D3E-1CF6-BFA4-569B-AA654C9B665B">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>1511E118-8A64-5C3F-664D-64C6C9B55A5A</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEXO_ALUNO" id="C5335000-637B-21C3-96D3-258612F7B286">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>80B1CA5D-FC51-DFC0-AC7C-38168C79982B</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>F</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RG_ALUNO" id="0407C2E1-B8AF-6616-3542-32A2316F8BDF">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>2467498C-C4A0-AE49-9ABF-290126E6871B</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPF_ALUNO" id="1890C11E-3575-3203-DF7C-0F20C353EC2C">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>BE307E99-F64E-0305-0C50-D362666D5979</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_NASC_ALUNO" id="DD6FE313-206E-D283-2AF4-79CD5437365A">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>FB43111D-9449-F0E6-48E7-15A9B6094876</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEL_ALUNO" id="5E01A9DE-ADFC-A3D8-0AFF-EE03B63E4F50">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>A0FD28AC-B489-0B6B-889D-B6350541EDE3</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEL_ALUNO" id="BB4404D4-E429-9B40-76CF-FD1D2B82E0CB">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>5F58E8D4-1265-2818-FB25-3BD0711B1CCF</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL_ALUNO" id="29D1DD83-0DF4-2395-0C0D-513C1A2B46F8">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>CCA4252D-7374-11DA-01CD-F77EB541B9D0</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B50725A1-4639-F5BE-7930-3F1FAF0DF665" name="TB_ALUNO_PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>76DBC6BF-BA58-58E5-EA4A-7C65CF1F7F2F</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F6C11C4-ECD4-8796-3AF5-835A9640EB9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AA6771F-4742-BF19-C3BF-8A063D487346" name="TB_ALUNO_TB_TURMA_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>48CDD36E-B88E-8862-F5B8-3D1D425FECFA</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCDB4791-366A-43C4-30A7-0E6F07C84AE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DE9EA4D-30C4-ED45-2D6D-526831465B77" name="TB_ALUNO_TB_RESPONSAVEL_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>AA55D17A-31BD-02CF-0BAE-2390D6750508</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6E1E947-F1B5-66BD-01E2-BF844080D477"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

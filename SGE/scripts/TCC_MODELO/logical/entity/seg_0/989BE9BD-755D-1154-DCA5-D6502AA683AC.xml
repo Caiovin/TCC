@@ -5,7 +5,7 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>TCC_MODELO</ownerDesignName>
 <engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+<item key="CEBD1405-FE18-8CF7-EA79-40A6BD047931" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -22,11 +22,13 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>TCC_MODELO</ownerDesignName>
 <engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+<item key="CEBD1405-FE18-8CF7-EA79-40A6BD047931" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
 </Attribute>
 <Attribute name="RM_ALUNO" id="951800C9-2261-02F2-8808-751B4119F807">
 <createdBy>Familia</createdBy>
@@ -34,7 +36,7 @@
 <generatorID>034DBD93-4F2E-09FC-3625-9C4C0C692CF6</generatorID>
 <ownerDesignName>TCC_MODELO</ownerDesignName>
 <engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+<item key="CEBD1405-FE18-8CF7-EA79-40A6BD047931" value="true"/>
 </engineerTo>
 <referedAttribute>B086FC4E-2920-AC6A-4F5E-FD89763053D7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -47,11 +49,12 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>TCC_MODELO</ownerDesignName>
 <engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+<item key="CEBD1405-FE18-8CF7-EA79-40A6BD047931" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT040</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
 </Attribute>
 <Attribute name="DT_OCORRENCIA" id="6191D0E0-FAE3-0679-DCBC-428C8148D6A1">
 <createdBy>Familia</createdBy>
@@ -59,9 +62,8 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>TCC_MODELO</ownerDesignName>
 <engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+<item key="CEBD1405-FE18-8CF7-EA79-40A6BD047931" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -74,7 +76,7 @@
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>TCC_MODELO</ownerDesignName>
 <engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+<item key="CEBD1405-FE18-8CF7-EA79-40A6BD047931" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

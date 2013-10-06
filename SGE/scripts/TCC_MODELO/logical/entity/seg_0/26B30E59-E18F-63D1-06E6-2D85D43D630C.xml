@@ -16,6 +16,19 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RM_ALUNO" id="E9B78600-8541-671C-17D0-BF397A2BE972">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:41:36 UTC</createdTime>
+<generatorID>5467AE89-804E-F8F2-5B06-37EFE535B524</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>B086FC4E-2920-AC6A-4F5E-FD89763053D7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
 <Attribute name="COD_AULA" id="08B9C000-5914-7CB5-F665-2EC8DB6BCC90">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 20:25:02 UTC</createdTime>
@@ -25,6 +38,19 @@
 <item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
 </engineerTo>
 <referedAttribute>BB95A342-CA5E-5B5F-1CBD-AD7AF63A8CB5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="COD_TURMA" id="9E75CA94-2E06-FA62-8232-598C73953243">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:41:05 UTC</createdTime>
+<generatorID>F98895CB-2ED3-7F9F-E07D-A0302D47A8F4</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>FF72AF06-EB34-0435-3B50-8025EC53CB05</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -40,7 +66,7 @@
 <defaultValue>P</defaultValue>
 <use>0</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<domain>E31EAF5A-5E30-E883-AB7E-90B3848BF3E6</domain>
+<domain>6B76A3AD-5077-3C75-B36D-974E9A540872</domain>
 </Attribute>
 <Attribute name="OBS" id="C3D4D959-171C-FE59-266A-50FDDC09CFA4">
 <createdBy>Familia</createdBy>
@@ -69,6 +95,8 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>08B9C000-5914-7CB5-F665-2EC8DB6BCC90</attributeRef>
+<attributeRef>9E75CA94-2E06-FA62-8232-598C73953243</attributeRef>
+<attributeRef>E9B78600-8541-671C-17D0-BF397A2BE972</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

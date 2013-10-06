@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AD00CD07-FF82-4BA0-2A5E-A9DE78255D1A" name="TB_REGRA_TB_MENU_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>C78D7D71-49F4-19E7-1B63-E502B6D66EB3</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<containerWithKeyObject>AE0664D2-F016-7322-706B-187A53A12022</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>254AE674-E700-D25F-CD72-61627DB4378D</localFKIndex>
+<keyObject>5BC373F3-ABAB-C15F-26EC-22F9BFAF3966</keyObject>
+<mandatory>true</mandatory>
+<transferable>false</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

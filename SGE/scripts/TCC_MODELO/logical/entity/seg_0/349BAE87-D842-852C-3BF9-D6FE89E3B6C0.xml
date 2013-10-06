@@ -41,19 +41,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="COD_PROFESSOR" id="09D204D4-CEB4-70BE-01EF-3BD9A443FD26">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 19:53:10 UTC</createdTime>
-<generatorID>52DD26DD-EAB5-B552-BD7B-864915187423</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<referedAttribute>4EA2318C-DEA9-0FB8-5867-F198D3E00815</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
 <Attribute name="DESC_ATIVIDADE" id="E561B101-99CE-BE45-CE8D-1697DD58A3CD">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 19:51:56 UTC</createdTime>
@@ -80,7 +67,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
 </Attribute>
-<Attribute name="DT_ENTREGA" id="70B28E5F-1CCB-FB71-5556-D3840C60A9F6">
+<Attribute name="PRAZO_ENTREGA" id="70B28E5F-1CCB-FB71-5556-D3840C60A9F6">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 20:31:44 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>

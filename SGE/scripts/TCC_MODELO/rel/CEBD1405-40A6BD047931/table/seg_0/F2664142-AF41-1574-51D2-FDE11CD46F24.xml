@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2664142-AF41-1574-51D2-FDE11CD46F24" name="TB_LISTA_PERMISSOES">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>8C36B089-5A30-62F2-7D5C-1BFC35181E2E</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_REGRA" id="D16934E7-2B1B-41D6-4D45-B65E90AC6619">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>1EA2E78E-3032-6A02-714E-22716A56FB41</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>6BC851C6-28BD-9983-CCFA-2C9456E8D076</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="815FDB5A-A8D8-9BD4-5F6D-9D0B5DD98A2D" referredColumn="6BC851C6-28BD-9983-CCFA-2C9456E8D076"/>
+</associations>
+</Column>
+<Column name="ID_GRUPO" id="A126C202-5388-017B-1066-D0EB4651E4E0">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>C4D108C5-9863-137C-E4B7-15BFFB24D8F7</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>E99F2A1D-6E5A-3FC1-3F28-F8D2CC9FA4F9</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DF754E4-0538-06DD-12E9-91291DE6CE50" referredColumn="E99F2A1D-6E5A-3FC1-3F28-F8D2CC9FA4F9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35996120-A534-F7AB-D2AA-B909A3101486" name="TB_LISTA_PERMISSOES_PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>C95E71E2-A6B1-3393-6B9B-3523A1C125E3</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D16934E7-2B1B-41D6-4D45-B65E90AC6619"/>
+<colUsage columnID="A126C202-5388-017B-1066-D0EB4651E4E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="302C7B60-5A38-B686-CCF1-B447701D5892" name="TB_LISTA_PERMISSOES_TB_REGRA_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>EC6D038B-1C9F-47B4-6E61-BEB3150738F9</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D16934E7-2B1B-41D6-4D45-B65E90AC6619"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52DEBB87-3B50-F20C-A046-E0A7517922C7" name="TB_LISTA_PERMISSOES_TB_GRUPO_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>FAB88970-1CAD-ED43-56B5-5581639B6518</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A126C202-5388-017B-1066-D0EB4651E4E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

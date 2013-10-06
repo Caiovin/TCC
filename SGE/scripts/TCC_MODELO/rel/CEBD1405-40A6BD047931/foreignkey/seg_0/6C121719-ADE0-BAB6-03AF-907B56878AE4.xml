@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6C121719-ADE0-BAB6-03AF-907B56878AE4" name="TB_ENTREGA_ATIVIDADE_TB_ATIVIDADE_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>1C2A8185-A3C0-E29C-FA8E-9835147274CA</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<containerWithKeyObject>BC1F0648-D544-4987-CED9-E19B1F29E0C9</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>5CFF7141-2DBE-6E47-6D62-432EE56CB88D</localFKIndex>
+<keyObject>8DA05527-922E-881E-E524-03FB9C6A8277</keyObject>
+<mandatory>true</mandatory>
+<transferable>false</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

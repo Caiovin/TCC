@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.sge.bean.OcorrenciaBean;
+import br.com.sge.bean.Ocorrencia;
 import br.com.sge.exception.DaoException;
 import br.com.sge.util.DbUtil;
 
@@ -17,8 +17,8 @@ public class OcorrenciaDao {
 			"delete from TB_OCORRENCIA where COD_OCORRENCIA = ?";
 
 	private static final String INSERIR_OCORRENCIA =
-			"insert into TB_OCORRENCIA (COD_OCORRENCIA, RM_ALUNO, NM_ALUNO, DESC_OCORRENCIA, DT_OCORRENCIA) "+
-            "values (?,?,?,?,?)";
+			"insert into TB_OCORRENCIA (COD_OCORRENCIA, RM_ALUNO, DESC_OCORRENCIA, DT_OCORRENCIA) "+
+            "values (?,?,?,?)";
 
 	private static final String ATUALIZAR_OCORRENCIA =
 			"update TB_OCORRENCIA set " +
@@ -37,12 +37,46 @@ public class OcorrenciaDao {
 
 	private static final  String CONSULTA_OCORRENCIA_COD = 
 			"select * from TB_OCORRENCIA where COD_OCORRENCIA = ?";
-
-	public List<OcorrenciaBean> consultarOcorrencia(String nmAluno) throws DaoException{		
+	
+	private static final String QUERY_SEQUENCIA_ID = 
+			"select isnull(max(COD_OCORRENCIA), 0) + 1 AS NOVO_ID from TB_OCORRENCIA";
+	
+	
+	private Ocorrencia getBean(ResultSet result) throws DaoException, SQLException{
+		Ocorrencia ocorrencia = new Ocorrencia();
+		
+		ocorrencia.setCodOcorrencia(result.getInt("COD_OCORRENCIA"));
+		ocorrencia.setDescOcorrencia(result.getString("DESC_OCORRENCIA"));
+		ocorrencia.setDtOcorrencia(DbUtil.getJavaDate(result, "DT_OCORRENCIA"));
+		ocorrencia.setRmAluno(result.getInt("RM_ALUNO"));
+		
+		return ocorrencia;
+	}
+	
+	private int getSequenciaId() throws DaoException{
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
-		List<OcorrenciaBean> listaOcorrencia = new ArrayList<OcorrenciaBean>();
+		int retorno = 0;
+		try{
+			statement = conn.prepareStatement(QUERY_SEQUENCIA_ID);
+			result = statement.executeQuery();
+			if(result.next()){
+				retorno = result.getInt("NOVO_ID");
+			}
+		}catch (SQLException e) {
+			throw new DaoException(e);
+		} finally {
+			DbUtil.close(conn, statement, result);
+		}
+		return retorno;
+	}
+
+	public List<Ocorrencia> consultarOcorrencia(String nmAluno) throws DaoException{		
+		Connection conn = DbUtil.getConnection();
+		PreparedStatement statement = null;
+		ResultSet result = null;
+		List<Ocorrencia> listaOcorrencia = new ArrayList<Ocorrencia>();
 		try {
 			if(nmAluno.equals("")){
 				statement = conn.prepareStatement(CONSULTA_OCORRENCIA);
@@ -52,12 +86,7 @@ public class OcorrenciaDao {
 			}
 			result = statement.executeQuery();
 			while (result.next()) {
-				OcorrenciaBean objOcor = new OcorrenciaBean();
-				objOcor.setCodOcorrencia(result.getInt(1));
-				objOcor.setRmAluno(result.getInt(2));
-                objOcor.setNmAluno(result.getString(3));
-				objOcor.setDescOcorrencia(result.getString(4));
-                objOcor.setDtOcorrencia(result.getString(5));
+				Ocorrencia objOcor = getBean(result);
 				listaOcorrencia.add(objOcor);
 			}
 		} catch (SQLException e) {
@@ -68,8 +97,8 @@ public class OcorrenciaDao {
 		return listaOcorrencia;
 	}
 
-	public OcorrenciaBean consultarOcorrenciaCod(int codOcorrencia) throws DaoException{		
-		OcorrenciaBean objOcor = new OcorrenciaBean();
+	public Ocorrencia consultarOcorrenciaCod(int codOcorrencia) throws DaoException{		
+		Ocorrencia objOcor = new Ocorrencia();
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
@@ -78,11 +107,7 @@ public class OcorrenciaDao {
 			statement.setInt(1, codOcorrencia);
 			result = statement.executeQuery();
 			while (result.next()) {
-				objOcor.setCodOcorrencia(result.getInt(1));
-				objOcor.setRmAluno(result.getInt(2));
-                objOcor.setNmAluno(result.getString(3));
-				objOcor.setDescOcorrencia(result.getString(4));
-                objOcor.setDtOcorrencia(result.getString(5));
+				objOcor = getBean(result);
 				
 			}
 		} catch (SQLException e) {
@@ -93,16 +118,16 @@ public class OcorrenciaDao {
 		return objOcor;
 	}
 
-	public boolean inserirOcorrencia(OcorrenciaBean obj) throws DaoException{		
+	public boolean inserirOcorrencia(Ocorrencia obj) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(INSERIR_OCORRENCIA);
-			statement.setInt(1, obj.getRmAluno());
-			statement.setString(2, obj.getNmAluno());
+			statement.setInt(1, getSequenciaId());
+			statement.setInt(2, obj.getRmAluno());
 			statement.setString(3, obj.getDescOcorrencia());
-			statement.setString(4, obj.getDtOcorrencia());
+			statement.setDate(4, DbUtil.getSqlDate(obj.getDtOcorrencia()));
 			statement.executeUpdate();
 
 		} catch (SQLException e) {
@@ -113,16 +138,15 @@ public class OcorrenciaDao {
 		return true;		
 	}
 
-	public boolean atualizarOcorrencia(OcorrenciaBean objOcor) throws DaoException{		
+	public boolean atualizarOcorrencia(Ocorrencia objOcor) throws DaoException{		
 		Connection conn = DbUtil.getConnection();
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
 			statement = conn.prepareStatement(ATUALIZAR_OCORRENCIA);
 			statement.setInt(1, objOcor.getRmAluno());
-			statement.setString(2, objOcor.getNmAluno());
 			statement.setString(3, objOcor.getDescOcorrencia());
-			statement.setString(4, objOcor.getDtOcorrencia());
+			statement.setDate(4, DbUtil.getSqlDate(objOcor.getDtOcorrencia()));
 			statement.executeUpdate();
 
 		} catch (SQLException e) {

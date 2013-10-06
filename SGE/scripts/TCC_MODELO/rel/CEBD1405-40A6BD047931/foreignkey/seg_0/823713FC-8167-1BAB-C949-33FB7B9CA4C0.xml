@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="823713FC-8167-1BAB-C949-33FB7B9CA4C0" name="TB_BAIRRO_TB_CIDADE_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>CC8508E6-2650-0909-91EF-421F9483583E</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<containerWithKeyObject>115740C8-9058-C18D-C8DB-BBE76033615C</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>3A78510E-5E53-8C62-0762-AB31DE903D8C</localFKIndex>
+<keyObject>724478E9-DE3C-4A15-DB53-9D863DEC7B40</keyObject>
+<mandatory>true</mandatory>
+<transferable>false</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="815FDB5A-A8D8-9BD4-5F6D-9D0B5DD98A2D" name="TB_LISTA_PERMISSOES_TB_REGRA_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>EC6D038B-1C9F-47B4-6E61-BEB3150738F9</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<containerWithKeyObject>F2664142-AF41-1574-51D2-FDE11CD46F24</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>302C7B60-5A38-B686-CCF1-B447701D5892</localFKIndex>
+<keyObject>699B3336-2C8D-BD84-6E50-B6AA68F03007</keyObject>
+<mandatory>true</mandatory>
+<transferable>false</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

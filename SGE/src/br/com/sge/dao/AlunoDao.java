@@ -47,6 +47,25 @@ public class AlunoDao {
 
 	private static final  String CONSULTA_ALUNO_RM = 
 			"select * from TB_ALUNO where RM_ALUNO = ?";
+	
+	private AlunoBean getBean(ResultSet result) throws DaoException, SQLException{
+		AlunoBean bean = new AlunoBean();
+		
+		AlunoBean objAlun = new AlunoBean();
+		objAlun.setRmAluno(result.getInt("RM_ALUNO"));
+		objAlun.setNmAluno(result.getString("NM_ALUNO"));
+        objAlun.setSexoAluno(result.getString("SEXO_ALUNO"));
+		objAlun.setRgAluno(result.getString("RG_ALUNO"));
+        objAlun.setCpfAluno(result.getString("CPF_ALUNO"));
+		objAlun.setDtNascAluno(result.getString("DT_NASC_ALUNO"));
+		objAlun.setTelAluno(result.getString("TEL_ALUNO"));
+		objAlun.setCelAluno(result.getString("CEL_ALUNO"));
+		objAlun.setEmailAluno(result.getString("EMAIL_ALUNO"));
+        objAlun.setCodTurma(result.getInt("COD_TURMA"));
+        objAlun.setCodResponsavel(result.getInt("COD_RESPONSAVEL"));
+        
+        return objAlun;
+	}
 
 
 	public List<AlunoBean> consultarAluno(String NmAluno) throws DaoException{		
@@ -63,22 +82,7 @@ public class AlunoDao {
 			}
 			result = statement.executeQuery();
 			while (result.next()) {
-				AlunoBean objAlun = new AlunoBean();
-				objAlun.setRmAluno(result.getInt(1));
-				objAlun.setNmAluno(result.getString(2));
-                objAlun.setSexoAluno(result.getString(3));
-				objAlun.setRgAluno(result.getString(4));
-                objAlun.setCpfAluno(result.getString(5));
-				objAlun.setDtNascAluno(result.getString(6));
-				objAlun.setTelAluno(result.getString(7));
-				objAlun.setCelAluno(result.getString(8));
-				objAlun.setEndAluno(result.getString(9));
-				objAlun.setEmailAluno(result.getString(10));
-                objAlun.setNmResponsavel(result.getString(11));
-                objAlun.setNmTurma(result.getString(12));
-                objAlun.setCodTurma(result.getInt(13));
-                objAlun.setCodResponsavel(result.getInt(14));
-                objAlun.setPrdAluno(result.getString(15));
+				AlunoBean objAlun = getBean(result);
                 listaAlun.add(objAlun);
 			}
 		} catch (SQLException e) {
@@ -98,22 +102,8 @@ public class AlunoDao {
 			statement = conn.prepareStatement(CONSULTA_ALUNO_RM);
 			statement.setInt(1, rmAluno);
 			result = statement.executeQuery();
-			while (result.next()) {
-				objAlun.setRmAluno(result.getInt(1));
-				objAlun.setNmAluno(result.getString(2));
-                objAlun.setSexoAluno(result.getString(3));
-				objAlun.setRgAluno(result.getString(4));
-                objAlun.setCpfAluno(result.getString(5));
-				objAlun.setDtNascAluno(result.getString(6));
-				objAlun.setTelAluno(result.getString(7));
-				objAlun.setCelAluno(result.getString(8));
-				objAlun.setEndAluno(result.getString(9));
-				objAlun.setEmailAluno(result.getString(10));
-                objAlun.setNmResponsavel(result.getString(11));
-                objAlun.setNmTurma(result.getString(12));
-                objAlun.setCodTurma(result.getInt(13));
-                objAlun.setCodResponsavel(result.getInt(14));
-                objAlun.setPrdAluno(result.getNString(15));
+			if (result.next()) {
+				objAlun = getBean(result);
 			}
 		} catch (SQLException e) {
 			throw new DaoException(e);

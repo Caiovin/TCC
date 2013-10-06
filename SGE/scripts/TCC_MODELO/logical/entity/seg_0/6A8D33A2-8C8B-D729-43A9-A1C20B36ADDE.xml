@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6A8D33A2-8C8B-D729-43A9-A1C20B36ADDE" name="TB_ENTREGA_ATIVIDADE">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:50:00 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RM_ALUNO" id="85678170-3756-F663-240D-E8A89C08194D">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:51:00 UTC</createdTime>
+<generatorID>D598A03A-7490-A29E-A00F-836171EFB8F5</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>B086FC4E-2920-AC6A-4F5E-FD89763053D7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="COD_ATIVIDADE" id="A034E81F-C32D-6022-DEF6-C383B52CF9D1">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:51:13 UTC</createdTime>
+<generatorID>1C2A8185-A3C0-E29C-FA8E-9835147274CA</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>19C7DB71-3321-A18F-4363-4AE325332E25</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="NOTA" id="06D40F10-0C13-ACCC-87DF-B9596DB3F562">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:59:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute name="DT_ENTREGA" id="F0B1EB65-19BE-D387-C6A0-12DA0F9D0FE1">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:59:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4C1FF257-9AB6-8F81-9E8E-3F40A0107EF2" name="TB_ENTREGA_ATIVIDADE PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:51:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>85678170-3756-F663-240D-E8A89C08194D</attributeRef>
+<attributeRef>A034E81F-C32D-6022-DEF6-C383B52CF9D1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

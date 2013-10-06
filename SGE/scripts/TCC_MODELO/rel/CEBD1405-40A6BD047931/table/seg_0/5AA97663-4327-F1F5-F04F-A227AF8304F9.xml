@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5AA97663-4327-F1F5-F04F-A227AF8304F9" name="TB_ATIVIDADE">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>349BAE87-D842-852C-3BF9-D6FE89E3B6C0</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_ATIVIDADE" id="9892BC07-0E6F-AE6D-BC24-232F58443B5D">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>19C7DB71-3321-A18F-4363-4AE325332E25</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_TURMA" id="F8A6E4EF-AA77-DAA8-C99C-326FDBC6127F">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>C16EFD5E-886B-F582-F2D3-B189782E8BB5</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>DD780586-65F1-A9E9-B388-BEA7A8F7E2B8</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="905D114F-BD1A-FC77-47BF-1290784C3E63" referredColumn="DD780586-65F1-A9E9-B388-BEA7A8F7E2B8"/>
+</associations>
+</Column>
+<Column name="DESC_ATIVIDADE" id="3E129745-DD42-7763-351F-E5D4525B680A">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>E561B101-99CE-BE45-CE8D-1697DD58A3CD</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_ATIVIDADE" id="8CCBACA5-FCC6-A37D-550D-D84EE562AF14">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>DC7DF43C-6FB9-4585-A660-E8B242E9A423</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRAZO_ENTREGA" id="5581CF17-3C65-3E29-08E0-B2EC4F4A0322">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>70B28E5F-1CCB-FB71-5556-D3840C60A9F6</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ATIVIDADE" id="08922521-C2F2-3A0D-2567-68B306AD32AB">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>D31C2B22-A670-4520-9D2D-BCFB61A6EB82</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR_ATIVIDADE" id="2791C9FD-9629-B82F-1694-03D43FDACF9D">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>F534336A-2F70-B8B9-1272-458340ED2C67</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8DA05527-922E-881E-E524-03FB9C6A8277" name="TB_ATIVIDADE_PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:16 UTC</createdTime>
+<generatorID>78FB21DD-2059-6506-6B30-9999D4268F9D</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9892BC07-0E6F-AE6D-BC24-232F58443B5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="719F6CD3-BF8A-1934-522C-0660F4339ADA" name="TB_ATIVIDADE_TB_TURMA_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>7E385B71-7BE1-E2A4-038F-277D73F677EE</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8A6E4EF-AA77-DAA8-C99C-326FDBC6127F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

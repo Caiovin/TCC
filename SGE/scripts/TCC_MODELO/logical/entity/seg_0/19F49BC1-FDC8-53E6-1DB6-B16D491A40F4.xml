@@ -49,10 +49,24 @@
 <engineerTo>
 <item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
 <defaultValue>M</defaultValue>
-<use>0</use>
+<use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<domain>DFCE1C38-2042-0FD7-F70F-A9856B9AF5F4</domain>
+</Attribute>
+<Attribute name="NR_SALA" id="0924C2AA-8089-F8EF-2BF3-FF6BC7276C10">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:45:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

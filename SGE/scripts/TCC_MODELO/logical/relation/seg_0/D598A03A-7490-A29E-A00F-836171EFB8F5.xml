@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_18" directorySegmentName="seg_0" id="D598A03A-7490-A29E-A00F-836171EFB8F5">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:51:00 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>76DBC6BF-BA58-58E5-EA4A-7C65CF1F7F2F</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D8AEA5C8-9CE0-ADCE-8963-AB8DA983E192</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6A8D33A2-8C8B-D729-43A9-A1C20B36ADDE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

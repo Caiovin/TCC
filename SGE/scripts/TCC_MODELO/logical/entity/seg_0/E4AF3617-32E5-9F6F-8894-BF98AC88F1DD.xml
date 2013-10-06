@@ -49,10 +49,10 @@
 <engineerTo>
 <item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
 <defaultValue>F</defaultValue>
-<use>0</use>
+<use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<domain>C4349FD9-BDC3-7DEB-370E-247D47E2BA09</domain>
 </Attribute>
 <Attribute name="RG_PROFESSOR" id="916B6D39-5251-0FFB-C981-8745D8515916">
 <createdBy>Familia</createdBy>
@@ -120,7 +120,21 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>11</dataTypeSize>
 </Attribute>
-<Attribute name="END_PROFESSOR" id="5F863588-A99D-C5FA-31CF-A72C35882516">
+<Attribute name="CEP" id="51829D0B-EEEE-711C-1637-5CA388BA0B7C">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 21:52:16 UTC</createdTime>
+<generatorID>6E72E93A-E531-5944-5079-89F68379A0B4</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>01C317BD-0077-697C-12BB-E64010D2D359</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+</Attribute>
+<Attribute name="NR_RESIDENCIA" id="5F863588-A99D-C5FA-31CF-A72C35882516">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 19:07:21 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>
@@ -131,7 +145,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200</dataTypeSize>
+<dataTypeSize>10</dataTypeSize>
 </Attribute>
 <Attribute name="EMAIL_PROFESSOR" id="E46B978F-51C6-1563-5D60-C736AE7E8FAD">
 <createdBy>Familia</createdBy>
@@ -155,10 +169,10 @@
 <engineerTo>
 <item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
 <defaultValue>M</defaultValue>
-<use>0</use>
+<use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<domain>DFCE1C38-2042-0FD7-F70F-A9856B9AF5F4</domain>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

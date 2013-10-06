@@ -28,36 +28,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="COD_PROFESSOR" id="89169F8B-9E60-C2CC-2367-310CA93CBE53">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 18:40:12 UTC</createdTime>
-<generatorID>F7BF1B65-E614-5909-3C77-9894250531BD</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<referedAttribute>4EA2318C-DEA9-0FB8-5867-F198D3E00815</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
-<Attribute name="COD_TURMA" id="78D3CE7A-AB66-7148-2582-2C4CA247DFCC">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 18:41:37 UTC</createdTime>
-<generatorID>16F46B71-D856-0D72-77B7-E247F296A8A6</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<referedAttribute>FF72AF06-EB34-0435-3B50-8025EC53CB05</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
-<Attribute name="COD_MATERIA" id="B53381F2-AA1F-3E60-7A5C-D9948C772453">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 19:45:30 UTC</createdTime>
-<generatorID>568A2A82-B406-1B92-B66C-E1585DB43806</generatorID>
+<Attribute name="COD_MATERIA" id="3A936B89-194A-2EA0-92FF-42E15CAAAECC">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:42:25 UTC</createdTime>
+<generatorID>5AE18EA0-4918-6C1B-790C-26098E008C4F</generatorID>
 <ownerDesignName>TCC_MODELO</ownerDesignName>
 <engineerTo>
 <item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
@@ -67,46 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="NM_TURMA" id="B03EE7E8-7CE0-5D2A-44E0-9A1F1B95A1F0">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 19:39:54 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>120</dataTypeSize>
-</Attribute>
-<Attribute name="NM_PROFESSOR" id="0973E571-A92F-D4D6-1B46-B1E010E6D66D">
-<createdBy>Familia</createdBy>
-<createdTime>2013-09-28 19:39:32 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>120</dataTypeSize>
-</Attribute>
-<Attribute name="NM_MATERIA" id="1864D8ED-EDFC-8BD9-AB00-8BF26AA40451">
-<createdBy>Familia</createdBy>
-<createdTime>2013-10-01 20:38:39 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>TCC_MODELO</ownerDesignName>
-<engineerTo>
-<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>120</dataTypeSize>
-</Attribute>
-<Attribute name="HORARIO_AULA" id="EBB31FB0-1FD4-856B-CD42-6DEEFB262B69">
+<Attribute name="DATA_HORA" id="EBB31FB0-1FD4-856B-CD42-6DEEFB262B69">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 20:28:49 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>
@@ -119,6 +54,19 @@
 <logicalDatatype>LOGDT015</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
+</Attribute>
+<Attribute name="DESCR_ATIVIDADES" id="7C6DCDA2-3893-6339-E3A9-1AA8ACDB4C10">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:54:21 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

@@ -28,6 +28,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
+<Attribute name="COD_PROFESSOR" id="933C53C1-8F67-3350-CE9A-5A2462100B4A">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-05 17:38:47 UTC</createdTime>
+<generatorID>D3ECD01A-9F47-7DE7-96F6-E2040BDC356C</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<engineerTo>
+<item key="F7C4DC56-534D-13D1-C3EB-89C34A537531" value="true"/>
+</engineerTo>
+<referedAttribute>4EA2318C-DEA9-0FB8-5867-F198D3E00815</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
 <Attribute name="NM_MATERIA" id="26A8DBBD-6A2E-DC2B-1DCE-17FC7A0C8656">
 <createdBy>Familia</createdBy>
 <createdTime>2013-09-28 19:36:36 UTC</createdTime>

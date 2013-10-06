@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC1F0648-D544-4987-CED9-E19B1F29E0C9" name="TB_ENTREGA_ATIVIDADE">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>6A8D33A2-8C8B-D729-43A9-A1C20B36ADDE</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RM_ALUNO" id="A79EB4A0-AAE9-D47E-4F46-68B13B195307">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>85678170-3756-F663-240D-E8A89C08194D</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9F6C11C4-ECD4-8796-3AF5-835A9640EB9E</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="218327D6-A2C9-CAF7-B64A-CD0F19653B28" referredColumn="9F6C11C4-ECD4-8796-3AF5-835A9640EB9E"/>
+</associations>
+</Column>
+<Column name="COD_ATIVIDADE" id="4B2C5F19-F71D-B848-86E7-1135486B3E7B">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>A034E81F-C32D-6022-DEF6-C383B52CF9D1</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9892BC07-0E6F-AE6D-BC24-232F58443B5D</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C121719-ADE0-BAB6-03AF-907B56878AE4" referredColumn="9892BC07-0E6F-AE6D-BC24-232F58443B5D"/>
+</associations>
+</Column>
+<Column name="NOTA" id="F8EEF3E3-5140-2D66-44E4-48DA4D75B23E">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>06D40F10-0C13-ACCC-87DF-B9596DB3F562</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ENTREGA" id="35AF24AF-595F-83E4-6382-2220CE3190BC">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>F0B1EB65-19BE-D387-C6A0-12DA0F9D0FE1</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33A9528F-9CB8-2754-DC1C-C71AF960D9A6" name="TB_ENTREGA_ATIVIDADE_PK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>4C1FF257-9AB6-8F81-9E8E-3F40A0107EF2</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A79EB4A0-AAE9-D47E-4F46-68B13B195307"/>
+<colUsage columnID="4B2C5F19-F71D-B848-86E7-1135486B3E7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44AC3BD7-18FF-645F-C22F-54E7E05D918D" name="TB_ENTREGA_ATIVIDADE_TB_ALUNO_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>D598A03A-7490-A29E-A00F-836171EFB8F5</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A79EB4A0-AAE9-D47E-4F46-68B13B195307"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CFF7141-2DBE-6E47-6D62-432EE56CB88D" name="TB_ENTREGA_ATIVIDADE_TB_ATIVIDADE_FK">
+<createdBy>Win7</createdBy>
+<createdTime>2013-10-06 04:03:17 UTC</createdTime>
+<generatorID>1C2A8185-A3C0-E29C-FA8E-9835147274CA</generatorID>
+<ownerDesignName>TCC_MODELO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B2C5F19-F71D-B848-86E7-1135486B3E7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

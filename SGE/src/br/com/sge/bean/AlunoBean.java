@@ -17,7 +17,14 @@ public class AlunoBean {
     private String prdAluno;
     private int codTurma;
     
+    private TurmaBean turma;
     
+	public TurmaBean getTurma() {
+		return turma;
+	}
+	public void setTurma(TurmaBean turma) {
+		this.turma = turma;
+	}
 	/**
 	 * @return the sexoAluno
 	 */
